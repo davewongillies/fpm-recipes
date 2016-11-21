@@ -1,0 +1,21 @@
+FROM debian:jessie-slim
+
+MAINTAINER David Gillies <dave.gillies@gmail.com>
+ENV DISTRIBUTION debian
+ENV RELEASE jessie
+ENV REFRESHED_AT 2016-11-21
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt-get update -qq -y && apt-get install -q -y --no-install-recommends \
+    build-essential curl git ruby bundler ruby-dev lsb-release ca-certificates; \
+    apt-get dist-upgrade -q -y --force-yes
+
+COPY Gemfile .
+RUN echo "gem: --no-ri --no-rdoc" >/etc/gemrc; bundle install --binstubs /usr/local/bin
+
+COPY run.sh /usr/local/bin/
+
+VOLUME /data
+WORKDIR /data
+
+CMD ["run.sh"]
