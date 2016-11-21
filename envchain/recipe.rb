@@ -21,12 +21,12 @@ class Envchain < FPM::Cookery::Recipe
       FPM::Cookery::Log.info "Installing build_depends: #{build_depends.join(' ')}"
       sh("apt-get install -qq -y #{build_depends.join(' ')}")
     end
+
     make
   end
 
   def install
     bin.install 'envchain'
     share('doc/envchain').install %w(README.md LICENSE)
-
   end
 end
