@@ -3,6 +3,8 @@ dist: trusty
 sudo: required
 language: ruby
 cache: bundler
+service:
+  - docker
 bundler_args: --without system_tests
 script: "bundle exec rake test"
 matrix:
