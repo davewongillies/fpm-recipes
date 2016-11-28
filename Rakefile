@@ -9,7 +9,7 @@ task :test do
     recipes.sort.uniq.each do | recipe |
       Dir.chdir recipe do
         puts "===> Cooking recipe for #{recipe}"
-        system "docker run -e pkg_dir_uid=$(id -u) --rm -v $PWD:/data davewongillies/fpm-recipes:debian-jessie" or raise "ERROR: Recipe failed to cook"
+        system "docker run -e pkg_dir_uid=$(id -u) --rm -v $PWD:/data davewongillies/fpm-recipes:ubuntu-xenial" or raise "ERROR: Recipe failed to cook"
         system 'find -type f -name "*.deb" -exec dpkg-deb --info {} \;'
         system 'find -type f -name "*.deb" -exec dpkg-deb --contents {} \;'
       end
