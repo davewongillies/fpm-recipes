@@ -1,12 +1,12 @@
 class Vimb < FPM::Cookery::Recipe
   name 'vimb'
   version '2.11'
-  revision '1'
+  revision '2-5867b7'
 
   homepage "https://github.com/fanglingsu/#{name}"
   source "https://github.com/fanglingsu/#{name}.git",
     :with      => 'git',
-    :tag       => version,
+    :tag       => '5867b7b413b7cbdf1367781e5244a50465ec2af9',
     :submodule => true
 
   description 'A fast and easy-to-use status bar'
