@@ -1,7 +1,7 @@
 class Polybar < FPM::Cookery::Recipe
   name 'polybar'
-  version '2.3.5'
-  revision '2-6f6c5b74'
+  version '2.3.7'
+  revision '1'
 
   homepage "https://github.com/jaagr/#{name}"
   source "https://github.com/jaagr/#{name}.git",
