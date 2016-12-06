@@ -10,7 +10,8 @@ class Polybar < FPM::Cookery::Recipe
     :submodule => true
 
   description 'A fast and easy-to-use status bar'
-  build_depends 'cmake', 'cmake-data', 'libboost-dev', 'libfreetype6-dev', 'libxcb1-dev', 'libx11-xcb-dev', 'libxcb-util0-dev', 'libxcb-image0-dev', 'libxcb-randr0-dev', 'libxcb-ewmh-dev', 'libxcb-icccm4-dev', 'xcb-proto', 'python-xcbgen', 'i3-wm', 'libiw-dev', 'libasound2-dev', 'libmpdclient-dev', 'pkg-config', 'libfontconfig1-dev', 'libghc-x11-xft-dev'
+  build_depends 'cmake', 'cmake-data', 'libboost-dev', 'libfreetype6-dev', 'libxcb1-dev', 'libx11-xcb-dev', 'libxcb-util0-dev', 'libxcb-image0-dev', 'libxcb-randr0-dev', 'libxcb-ewmh-dev', 'libxcb-xkb-dev', 'libxcb-icccm4-dev', 'xcb-proto', 'python-xcbgen', 'i3-wm', 'libiw-dev', 'libasound2-dev', 'libmpdclient-dev', 'pkg-config', 'libfontconfig1-dev', 'libghc-x11-xft-dev'
+
   depends 'libmpdclient2'
 
   def build
