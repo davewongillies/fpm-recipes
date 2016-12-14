@@ -1,12 +1,12 @@
 class Polybar < FPM::Cookery::Recipe
   name 'polybar'
-  version '2.3.11'
-  revision '1'
+  version '2.3.13'
+  revision '1~3a6ca9'
 
   homepage "https://github.com/jaagr/#{name}"
   source "https://github.com/jaagr/#{name}.git",
     :with      => 'git',
-    :tag       => version,
+    :tag       => '3a6ca90fcb9a101fa137d734df49fdb3b73d9d82',
     :submodule => true
 
   description 'A fast and easy-to-use status bar'
