@@ -13,6 +13,7 @@ class Statsite < FPM::Cookery::Recipe
   build_depends 'autoconf', 'automake', 'dh-autoreconf', 'libtool', 'pkg-config'
 
   def build
+    autogen
     configure
     make
   end
