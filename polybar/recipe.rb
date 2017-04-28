@@ -30,12 +30,12 @@ class Polybar < FPM::Cookery::Recipe
     'libxcb-image0-dev',
     'libxcb-randr0-dev',
     'libxcb-util0-dev',
-    'libxcb-xrm-dev',
     'libxcb-xkb-dev',
     'libxcb1-dev',
     'pkg-config',
     'python-xcbgen',
     'xcb-proto'
+  depends 'libmpdclient2', 'libxcb-ewmh2'
 
   def build
     safesystem 'cmake -DCMAKE_BUILD_TYPE=Release'
