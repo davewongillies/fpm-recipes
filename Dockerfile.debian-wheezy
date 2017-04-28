@@ -3,7 +3,7 @@ FROM debian:wheezy-slim
 MAINTAINER David Gillies <dave.gillies@gmail.com>
 ENV DISTRIBUTION debian
 ENV RELEASE wheezy
-ENV REFRESHED_AT 2016-11-21
+ENV REFRESHED_AT 2017-04-28
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -qq -y && apt-get install -q -y --no-install-recommends \
