@@ -3,11 +3,11 @@ FROM ubuntu:xenial
 MAINTAINER David Gillies <dave.gillies@gmail.com>
 ENV DISTRIBUTION ubuntu
 ENV RELEASE xenial
-ENV REFRESHED_AT 2017-04-28
+ENV REFRESHED_AT 2017-05-11
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -qq -y && apt-get install -q -y --no-install-recommends \
-    build-essential curl git ruby bundler ruby-dev lsb-release ca-certificates dash; \
+    build-essential curl git ruby bundler ruby-dev lsb-release ca-certificates dash unzip; \
     apt-get dist-upgrade -q -y --force-yes
 
 COPY Gemfile .
