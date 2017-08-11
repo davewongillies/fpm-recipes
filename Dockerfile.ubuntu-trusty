@@ -18,4 +18,4 @@ COPY run.sh /usr/local/bin/
 VOLUME /data
 WORKDIR /data
 
-CMD ["run.sh"]
+CMD ["run.sh", "recipe.rb"]
