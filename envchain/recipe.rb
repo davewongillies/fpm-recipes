@@ -1,7 +1,7 @@
 class Envchain < FPM::Cookery::Recipe
   name 'envchain'
   version '1.0.1'
-  revision '1'
+  revision '2'
 
   homepage "https://github.com/sorah/#{name}"
   source "https://github.com/sorah/#{name}.git",
@@ -18,6 +18,6 @@ class Envchain < FPM::Cookery::Recipe
 
   def install
     bin.install 'envchain'
-    share('doc/envchain').install %w(README.md LICENSE)
+    doc(name).install Dir['README.md', 'LICENSE']
   end
 end

@@ -1,7 +1,7 @@
 class Autorandr < FPM::Cookery::Recipe
   name 'autorandr'
   version '0.0.33'
-  revision '1~4f5e240'
+  revision '2~4f5e240'
 
   homepage "https://github.com/wertarbyte/#{name}"
   source "https://github.com/wertarbyte/#{name}.git",
@@ -18,6 +18,6 @@ class Autorandr < FPM::Cookery::Recipe
     bin.install 'autorandr'
     etc('pm/config.d').install 'pm-utils/40autorandr'
     etc('bash_completion.d').install 'bash_completion/autorandr'
-    # share('doc/envchain').install %w(README.md LICENSE)
+    doc(name).install 'README'
   end
 end
