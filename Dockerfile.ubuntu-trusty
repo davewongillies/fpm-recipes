@@ -7,8 +7,9 @@ ENV REFRESHED_AT 2017-05-11
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -qq -y && apt-get install -q -y --no-install-recommends \
-    build-essential curl git ruby bundler ruby-dev lsb-release ca-certificates dash unzip; \
-    apt-get dist-upgrade -q -y --force-yes
+    build-essential curl git ruby bundler ruby-dev lsb-release ca-certificates dash unzip openssh-client; \
+    apt-get dist-upgrade -q -y --force-yes; \
+    echo "Host github.com\n  StrictHostKeyChecking no" >> /etc/ssh/ssh_config
 
 COPY Gemfile .
 RUN echo "gem: --no-ri --no-rdoc" >/etc/gemrc; bundle install --binstubs /usr/local/bin
