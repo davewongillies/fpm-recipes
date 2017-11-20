@@ -1,0 +1,32 @@
+FROM ubuntu:lucid
+
+MAINTAINER David Gillies <dave.gillies@gmail.com>
+ENV DISTRIBUTION ubuntu
+ENV RELEASE lucid
+ENV REFRESHED_AT 2017-11-17
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN sed -ie 's!archive!old-releases!g' /etc/apt/sources.list; \
+    apt-get update -qq -y && apt-get install -q -y --no-install-recommends \
+    build-essential curl lsb-release ca-certificates dash unzip openssh-client python-software-properties; \
+    apt-get dist-upgrade -q -y --force-yes
+
+RUN add-apt-repository ppa:brightbox/ruby-ng ; \
+    add-apt-repository ppa:git-core/ppa ; \
+    apt-get update -qq -y ; \
+    apt-get install -q -y --no-install-recommends ruby1.9.1 ruby1.9.1-dev git ;\
+    apt-get dist-upgrade -q -y --force-yes
+
+RUN mkdir -p /root/.ssh && ssh-keyscan github.com >> /root/.ssh/known_hosts
+
+COPY Gemfile .
+RUN echo "gem: --no-ri --no-rdoc" >/etc/gemrc; \
+    gem install bundler; \
+    bundle install --binstubs /usr/local/bin
+
+COPY run.sh /usr/local/bin/
+
+VOLUME /data
+WORKDIR /data
+
+CMD ["run.sh", "recipe.rb"]
