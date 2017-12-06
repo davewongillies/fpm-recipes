@@ -2,12 +2,14 @@
 dist: trusty
 sudo: required
 language: ruby
+rvm: 1.9.3
 cache: bundler
 service:
   - docker
 bundler_args: --without system_tests
-script: "bundle exec rake test"
 matrix:
   fast_finish: true
   include:
-  - rvm: 1.9.3
+  - env: DISTRO=ubuntu-xenial
+  - env: DISTRO=debian-jessie
+script: "bundle exec rake test distro=$DISTRO"
