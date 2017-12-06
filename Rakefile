@@ -6,10 +6,10 @@ task :test do
   recipes = []
   puts "===> Executing test for #{distro}"
 
-  changed_files = `git diff-tree -r --no-commit-id --name-only --diff-filter=ACMRTUXB HEAD~1 HEAD -- **/recipe.rb **/config/*.yaml`
-  changed_files.each_line {|line| recipes << line.split('/')[0]}
+  changed_recipes = `git diff-tree -r --no-commit-id --name-only --diff-filter=ACMRTUXB HEAD~1 HEAD -- **/recipe.rb **/config/*.yaml`
+  changed_recipes.each_line {|line| recipes << line.split('/')[0]}
 
-  if recipes
+  if recipes.length > 0
     recipes.sort.uniq.each do | recipe |
       Dir.chdir recipe do
         puts "===> Cooking #{recipe} on #{distro}"
