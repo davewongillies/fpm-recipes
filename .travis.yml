@@ -12,4 +12,12 @@ matrix:
   include:
   - env: DISTRO=ubuntu-xenial
   - env: DISTRO=debian-jessie
-script: "bundle exec rake test distro=$DISTRO"
+stages:
+  - build
+  - cook
+jobs:
+  include:
+    - stage: cook
+      script: "bundle exec rake test:cook distro=$DISTRO"
+    - stage: build
+      script: "bundle exec rake test:build distro=$DISTRO"
