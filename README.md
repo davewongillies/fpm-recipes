@@ -1,7 +1,20 @@
-# fpm-recipes
+# [fpm-recipes](https://hub.docker.com/r/davewongillies/fpm-recipes/)
 
-[![Build Status](https://travis-ci.org/davewongillies/fpm-recipes.svg?branch=master)](https://travis-ci.org/davewongillies/fpm-recipes)
+[![Build Status](https://travis-ci.org/davewongillies/fpm-recipes.svg?branch=master)](https://travis-ci.org/davewongillies/fpm-recipes) [![Docker Hub Build Status](https://img.shields.io/docker/build/davewongillies/fpm-recipes.svg)](https://hub.docker.com/r/davewongillies/fpm-recipes/builds/) ![Docker Hub Build Automated](https://img.shields.io/docker/automated/davewongillies/fpm-recipes.svg) [![Docker Hub Pulls](https://img.shields.io/docker/pulls/davewongillies/fpm-recipes.svg)](https://hub.docker.com/r/davewongillies/fpm-recipes/)
 
-![](https://ih0.redbubble.net/image.121551245.2521/flat,800x800,075,f.u6.jpg)
+## Overview
 
-My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) recipes. Mostly tested again Ubuntu Xenial 16.04, some recipes might also work against Debian Jessie and Wheezy if you're/I'm lucky
+My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) recipes. Mostly tested against Ubuntu Xenial 16.04, some recipes might also work against Debian Jessie and Wheezy if you're/I'm lucky
+
+## Usage
+
+```
+$ ./fpm-cook.sh <recipe_dir_name> (optional <distro-code-name>)
+```
+
+Options for distro:
+  * ubuntu-xenial
+  * ubuntu-trusty
+  * ubuntu-lucid
+  * debian-jessie
+  * debian-wheezy
