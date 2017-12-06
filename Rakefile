@@ -29,17 +29,8 @@ namespace :test do
   desc "Test docker build"
   task :build do
     distro  = ENV['distro'] || 'ubuntu-xenial'
-    dockerfiles = []
     puts "===> Test docker build for #{distro}"
-
-    changed_dockerfiles = `git diff-tree -r --no-commit-id --name-only --diff-filter=ACMRTUXB HEAD~1 HEAD -- Dockerfile.#{distro}`
-    changed_dockerfiles.each_line {|line| dockerfiles << line}
-
-    if dockerfiles.length > 0
-      system "docker build Dockerfile.#{distro}" or raise "ERROR: Failed Dockerfile.#{distro}"
-    else
-      puts "===> No Dockerfile changed for #{distro}"
-    end
+    system "docker build -f Dockerfile.#{distro} ." or raise "ERROR: Failed Dockerfile.#{distro}"
   end
 
 end
