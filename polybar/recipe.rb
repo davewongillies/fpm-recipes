@@ -2,14 +2,15 @@ class Polybar < FPM::Cookery::Recipe
 
 
   name 'polybar'
-  version '3.0.5'
-  git_ref = '2d1e3c215f8c125be20ce28a6def7a1b017df86b'
-  revision "1~#{git_ref[0..8]}"
+  version '3.1.0'
+  revision "1"
+
+  maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
+  license    'MIT'
 
   homepage "https://github.com/jaagr/#{name}"
   source "https://github.com/jaagr/#{name}.git",
     :with      => 'git',
-    :ref       => git_ref,
     :submodule => true
 
   description 'A fast and easy-to-use status bar'

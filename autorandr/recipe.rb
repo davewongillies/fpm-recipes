@@ -7,8 +7,10 @@ class Autorandr < FPM::Cookery::Recipe
   source "https://github.com/wertarbyte/#{name}.git",
     :with => 'git'
 
+  maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
+
   description 'Auto-detect the connect display hardware and load the appropiate X11 setup using xrandr or disper'
-  license 'MIT License'
+  license 'MIT'
   depends 'pm-utils', 'bash-completion'
 
   def build

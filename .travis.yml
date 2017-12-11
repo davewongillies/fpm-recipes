@@ -1,7 +1,7 @@
 dist: trusty
 sudo: required
 language: ruby
-rvm: 1.9.3
+rvm: 2.1.10
 cache: bundler
 service:
 - docker
@@ -17,16 +17,13 @@ jobs:
   - stage: cook
     env: DISTRO=ubuntu-xenial
     script: bundle exec rake test:cook distro=$DISTRO
-  - env: DISTRO=debian-jessie
-    script: bundle exec rake test:cook distro=$DISTRO
+    deploy:
+      provider: script
+      script: scripts/deploy.sh
+      skip_cleanup: true
   - stage: build
     env: DISTRO=ubuntu-xenial
     script: bundle exec rake test:build distro=$DISTRO
-  - env: DISTRO=debian-jessie
-    script: bundle exec rake test:build distro=$DISTRO
-deploy:
-  provider: script
-  script: bundle exec rake package:publish repo=fpm-recipes distro=xenial component=main
 env:
   global:
   - secure: 1Ua37W5gQQcaZl9wHXHDl7sqE4KzfoqPs5z/vnCNsBre5QYJKeltWiwdrSZcIqTzv2jFlKn6i/P9J/ozxaJvQWdIs+UlQOkBqgq6sSgrjoYSlREWyvMrmHXjoG4WZQOStzdmCGGrK8NAcuopXPfol7987R2ogMEQyVM1oLkoiqdowIBKVLWsTAYhrJFQ9mciFlOnwmNfev31hapUus03k+wQsKneInTywMChxjXqiRCUJpgqy792YDQB5FNe+4Aad1plnrJDW7qKQ/GzlI2/vvG56/KJzK3YKHGojnmR5KF3Rpj0h0xRc7yCLJJSkNhQMhlYPYTb7WOt7m8H1KX9H3Hqzt1oUlXTwY3FkCPWSb9Y7piKkAcup/r8WIV8pfo20jLBT8ltk33Hp9DjOGg0fip9PFBA34wbIO7hASCFnRjzVhuODkB5h3uEfg+D/PUSJ0+g/B1WEpOJ+lcGXi7Itdo3u8K5OKAH1zrtn8YC/RxpD+SYSnDA1/gidHm5h/k/UD2d7DJG7uSIsQA52MfnkRXVV30LJMhsoItoTh4U0Dz6Zg3pm4ASDSW6N2XLVXc0JEJQ5GGajHuZojBjbW2tCBnXbc5ertRPpwF55MGk66ebQlmbUFpgQ3IZVGzLu76kSueExn8hYhVZWKiS4F8yVCXz8Fqdp2Ha1BNj1ze3HZM=

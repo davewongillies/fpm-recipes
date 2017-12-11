@@ -9,7 +9,9 @@ class Envchain < FPM::Cookery::Recipe
     :tag => "v#{version}"
 
   description 'Environment variables meet gnome-keyring'
-  license 'MIT License'
+  license     'MIT'
+  maintainer  'Dave Wongillies <dave.gillies@gmail.com>'
+
   build_depends 'libsecret-1-dev', 'libreadline-dev'
 
   def build
