@@ -1,28 +1,33 @@
----
 dist: trusty
 sudo: required
 language: ruby
 rvm: 1.9.3
 cache: bundler
 service:
-  - docker
-bundler_args: --without system_tests
+- docker
+bundler_args: "--without system_tests"
 matrix:
   fast_finish: true
   include:
 stages:
-  - build
-  - cook
+- build
+- cook
 jobs:
   include:
-    - stage: cook
-      script: "bundle exec rake test:cook distro=$DISTRO"
-      env: DISTRO=ubuntu-xenial
-    - script: "bundle exec rake test:cook distro=$DISTRO"
-      env: DISTRO=debian-jessie
-
-    - stage: build
-      script: "bundle exec rake test:build distro=$DISTRO"
-      env: DISTRO=ubuntu-xenial
-    - script: "bundle exec rake test:build distro=$DISTRO"
-      env: DISTRO=debian-jessie
+  - stage: cook
+    env: DISTRO=ubuntu-xenial
+    script: bundle exec rake test:cook distro=$DISTRO
+  - env: DISTRO=debian-jessie
+    script: bundle exec rake test:cook distro=$DISTRO
+  - stage: build
+    env: DISTRO=ubuntu-xenial
+    script: bundle exec rake test:build distro=$DISTRO
+  - env: DISTRO=debian-jessie
+    script: bundle exec rake test:build distro=$DISTRO
+deploy:
+  provider: script
+  script: bundle exec rake package:publish repo=fpm-recipes distro=xenial component=main
+env:
+  global:
+  - secure: 1Ua37W5gQQcaZl9wHXHDl7sqE4KzfoqPs5z/vnCNsBre5QYJKeltWiwdrSZcIqTzv2jFlKn6i/P9J/ozxaJvQWdIs+UlQOkBqgq6sSgrjoYSlREWyvMrmHXjoG4WZQOStzdmCGGrK8NAcuopXPfol7987R2ogMEQyVM1oLkoiqdowIBKVLWsTAYhrJFQ9mciFlOnwmNfev31hapUus03k+wQsKneInTywMChxjXqiRCUJpgqy792YDQB5FNe+4Aad1plnrJDW7qKQ/GzlI2/vvG56/KJzK3YKHGojnmR5KF3Rpj0h0xRc7yCLJJSkNhQMhlYPYTb7WOt7m8H1KX9H3Hqzt1oUlXTwY3FkCPWSb9Y7piKkAcup/r8WIV8pfo20jLBT8ltk33Hp9DjOGg0fip9PFBA34wbIO7hASCFnRjzVhuODkB5h3uEfg+D/PUSJ0+g/B1WEpOJ+lcGXi7Itdo3u8K5OKAH1zrtn8YC/RxpD+SYSnDA1/gidHm5h/k/UD2d7DJG7uSIsQA52MfnkRXVV30LJMhsoItoTh4U0Dz6Zg3pm4ASDSW6N2XLVXc0JEJQ5GGajHuZojBjbW2tCBnXbc5ertRPpwF55MGk66ebQlmbUFpgQ3IZVGzLu76kSueExn8hYhVZWKiS4F8yVCXz8Fqdp2Ha1BNj1ze3HZM=
+  - secure: C26kn5qcJqKHf5IGqE2XIZYZsjXA4gmIB1b2vWvHwnjWdOjcNRFmcFnL4yqFXkcCUeRweXyf+SiDmGNifJstZSidV9skZwP4xEGnWiapX9emfGhV41fR9VAya77Qgkku1dJpKiKwHQ9kB7zCHVEzhmuK+36ZOzsey9xvx+v2H22u40ZE6Pzo8OIPlBnDRfCZVzW+/kBnXn1U34YODvMr5QtuDoPuMYPVH4nH52QN8Gyo78fOwiBecNGMK3lPIuvwtB6RjxJYUBxNKF86qBpj/+7jFopmn+ou0ANB2x/oDvZeHNZSmHeBMGvgzLWsolY8aN8J9KlrqY9mVWV9vJjyGOUhvcpY4cGU/wRQYXOz4hHGS74T7exWErSVDTlMIxl3/AXmuYBnK2m92PtGSULhddUxiQp8NU/7hN0cB0bm0Waq5knOvuaNnbO8KuGHOLpuVLFKo5tGITEObLfAPREwRQSydjhPdPsN9ukdt4UckGZ+XDkCP5woU/0UtLhlcJdAGehekBR3TcLWPSy5dY9QP/1E+/5wiNbB5bR0VXcJqPl0jWRHrLcfqzBOMFcEm4mKRewW2FJ0xzsUm4pHk3Htvsea6HdHNFBOqhWWyfJJTS038Zwk+BI60QVRG47gNR9b1nmHjtlseyNeiR+sqA6RY2fmB9hjfYJazbVYDmnZTUU=
