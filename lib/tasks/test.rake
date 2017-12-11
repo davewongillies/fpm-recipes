@@ -29,11 +29,16 @@ namespace :test do
     end
   end
 
-  desc "Test docker build"
+  desc "Test changed docker build"
   task :build do
-    distro  = ENV['distro'] || 'ubuntu-xenial'
-    puts "===> Test docker build for #{distro}"
-    system "docker build -f Dockerfile.#{distro} ." or raise "ERROR: Failed Dockerfile.#{distro}"
+    dockerfiles = []
+    changed_dockerfiles = `git diff-tree -r --no-commit-id --name-only --diff-filter=ACMRTUXB HEAD~1 HEAD -- Dockerfile.*`
+    changed_dockerfiles.each_line {|line| dockerfiles << line.split('/')[0]}
+
+    dockerfiles.each do | dockerfile |
+      puts "===> Test dockerfile #{dockerfile}"
+      system "docker build -f #{dockerfile} ." or raise "ERROR: Failed #{dockerfile}"
+    end
   end
 
 end

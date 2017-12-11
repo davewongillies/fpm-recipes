@@ -1,7 +1,7 @@
 dist: trusty
 sudo: required
 language: ruby
-rvm: 1.9.3
+rvm: 2.1.10
 cache: bundler
 service:
 - docker
@@ -17,12 +17,8 @@ jobs:
   - stage: cook
     env: DISTRO=ubuntu-xenial
     script: bundle exec rake test:cook distro=$DISTRO
-  - env: DISTRO=debian-jessie
-    script: bundle exec rake test:cook distro=$DISTRO
   - stage: build
     env: DISTRO=ubuntu-xenial
-    script: bundle exec rake test:build distro=$DISTRO
-  - env: DISTRO=debian-jessie
     script: bundle exec rake test:build distro=$DISTRO
 deploy:
   provider: script
