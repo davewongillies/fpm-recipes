@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'rake', '< 12'
-gem 'httparty'
-gem 'dpkg-deb'
+group :deployment do
+  gem 'rake', '< 12'
+  gem 'httparty'
+  gem 'dpkg-deb'
+end
 
-gem 'fpm-cookery',
-    :git    => 'https://github.com/bernd/fpm-cookery.git',
-    :branch => 'master'
-
+group :production do
+  gem 'fpm-cookery',
+      :git    => 'https://github.com/bernd/fpm-cookery.git',
+      :branch => 'master'
+end

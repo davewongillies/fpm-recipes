@@ -5,7 +5,7 @@ rvm: 2.1.10
 cache: bundler
 service:
 - docker
-bundler_args: "--without system_tests"
+bundler_args: "--without system_tests --without production"
 matrix:
   fast_finish: true
   include:
