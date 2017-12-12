@@ -1,9 +1,12 @@
 class VimbWebkit2 < FPM::Cookery::Recipe
   name     'vimb-webkit2'
   version  '3.0'
-  revision 'alpha-1'
+  revision 'alpha-2'
 
-  description 'A fast and easy-to-use status bar'
+  description 'Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.'
+  license     'GPL-3.0'
+
+  maintainer  'Dave Wongillies <dave.gillies@gmail.com>'
 
   homepage 'https://github.com/fanglingsu/vimb'
   source   'https://github.com/fanglingsu/vimb.git',
