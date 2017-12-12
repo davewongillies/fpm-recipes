@@ -4,7 +4,6 @@ class Tflint < FPM::Cookery::Recipe
   name       'tflint'
   version    '0.5.3'
   revision   '1'
-  arch       'x86_64'
   homepage   "https://github.com/wata727/#{name}"
   source     "#{homepage}/releases/download/v#{version}/#{name}_linux_amd64.zip"
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
