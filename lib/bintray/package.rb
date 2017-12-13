@@ -24,6 +24,7 @@ module Bintray
                        repo,
                        licenses=[],
                        vcs_url='https://github.com/davewongillies/fpm-recipes.git')
+      licenses.length == 0 and raise "#{__method__}: #{name}: No license supplied"
 
       payload = { name: name,
                   licenses: licenses,
@@ -38,7 +39,7 @@ module Bintray
 
       response = self.class.post("/packages/#{@subject}/#{repo}", options)
 
-      puts "#{__method__}: #{name}: #{response['message']}"
+      puts "#{__method__}: #{name}: #{response}"
 
       response.code == 201
     end
@@ -50,14 +51,13 @@ module Bintray
       repo_fp = "pool/#{component}/#{fields['Package'][0]}/#{fields['Package']}/#{fn}"
 
       if not get_package(fields['Package'], repo)
-        create_package(fields['Package'], repo, [fields['License']])
+        create_package(fields['Package'], repo, [fields['License']]) or raise "Failed to create package #{fields['Package']}"
       end
 
       headers = { 'X-Bintray-Debian-Distribution' => distro,
                   'X-Bintray-Debian-Component'    => component,
                   'X-Bintray-Debian-Architecture' => fields['Architecture']
       }
-
       options = { basic_auth: @auth, headers: headers, body: open(file_path).read }
 
       response = self.class.put("/content/#{@subject}/#{repo}/#{fields['Package']}/#{fields['Version']}/#{repo_fp};publish=1", options)
