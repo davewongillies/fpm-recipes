@@ -1,16 +1,21 @@
 class DockerCompose < FPM::Cookery::Recipe
-  name "docker-compose"
-  version "1.9.0"
-  revision "1"
-  homepage 'https://github.com/docker/compose'
-  source "#{homepage}/releases/download/#{version}/docker-compose-Linux-x86_64"
+  name        'docker-compose'
+  description 'Define and run multi-container applications with Docker'
+  homepage    'https://github.com/docker/compose'
+  license     'Apache-2.0'
 
-  def build
-  end
+  maintainer  'Dave Wongillies <dave.gillies@gmail.com>'
+
+  version  '1.18.0'
+  revision '2'
+
+  source "#{homepage}/releases/download/#{version}/#{name}-Linux-x86_64"
+
+  def build; end
 
   def install
-    bin.install "docker-compose-Linux-x86_64", 'docker-compose'
-    chmod 0755, bin('docker-compose')
+    bin.install "#{name}-Linux-x86_64", name
+    chmod 0755, bin(name)
   end
 
 end
