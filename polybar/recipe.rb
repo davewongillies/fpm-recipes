@@ -3,7 +3,7 @@ class Polybar < FPM::Cookery::Recipe
 
   name 'polybar'
   version '3.1.0'
-  revision "1"
+  revision '2'
 
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
   license    'MIT'
@@ -42,7 +42,7 @@ class Polybar < FPM::Cookery::Recipe
   depends 'libmpdclient2', 'libxcb-ewmh2'
 
   def build
-    safesystem 'cmake -DCMAKE_BUILD_TYPE=Release'
+    safesystem 'cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr'
     make
   end
 
