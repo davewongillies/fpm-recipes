@@ -3,7 +3,7 @@ class LastPassCli < FPM::Cookery::Recipe
 
   name     'lastpass-cli'
   version  '1.2.2'
-  revision '3'
+  revision '4'
 
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
   license    'GPL-2.0'
@@ -20,7 +20,10 @@ class LastPassCli < FPM::Cookery::Recipe
     'libxml2-dev',
     'cmake',
     'bash-completion',
-    'pkg-config'
+    'pkg-config',
+    'xsltproc',
+    'asciidoc',
+    'docbook-xsl'
 
   depends 'openssl', 'pinentry-curses', 'xclip'
 
@@ -30,8 +33,9 @@ class LastPassCli < FPM::Cookery::Recipe
 
   def install
    make :install, 'DESTDIR' => destdir
+   man1.install 'lpass.1'
    doc(name).install 'contrib/examples'
-   share('fish/vendor_completions.d').install 'contrib/completions-lpass.fish'
+   share('fish/vendor_completions.d/lpass.fish').install 'contrib/completions-lpass.fish'
   end
 
 end
