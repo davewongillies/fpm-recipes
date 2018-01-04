@@ -28,14 +28,15 @@ class LastPassCli < FPM::Cookery::Recipe
   depends 'openssl', 'pinentry-curses', 'xclip'
 
   def build
-    make :all
+    make
+    make 'doc-man'
   end
 
   def install
    make :install, 'DESTDIR' => destdir
-   man1.install 'lpass.1'
+   man1.install 'build/lpass.1'
    doc(name).install 'contrib/examples'
-   share('fish/vendor_completions.d/lpass.fish').install 'contrib/completions-lpass.fish'
+   share('fish/vendor_completions.d').install 'contrib/completions-lpass.fish', 'lpass.fish'
   end
 
 end
