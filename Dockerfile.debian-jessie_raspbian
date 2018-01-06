@@ -1,0 +1,25 @@
+FROM resin/rpi-raspbian
+
+MAINTAINER David Gillies <dave.gillies@gmail.com>
+ENV DISTRIBUTION debian
+ENV RELEASE jessie
+ENV REFRESHED_AT 2018-01-05
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt-get update -qq -y && apt-get install -q -y --no-install-recommends \
+    build-essential curl git ruby bundler ruby-dev lsb-release ca-certificates unzip openssh-client; \
+    apt-get dist-upgrade -q -y --force-yes; \
+    apt-get clean ; \
+    rm -rf /var/lib/apt/lists/*
+
+RUN mkdir -p /root/.ssh && ssh-keyscan github.com >> /root/.ssh/known_hosts
+
+COPY Gemfile .
+RUN echo "gem: --no-ri --no-rdoc" >/etc/gemrc; bundle install --binstubs /usr/local/bin
+
+COPY run.sh /usr/local/bin/
+
+VOLUME /data
+WORKDIR /data
+
+CMD ["run.sh", "recipe.rb"]
