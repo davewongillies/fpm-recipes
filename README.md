@@ -18,3 +18,9 @@ Options for distro:
   * ubuntu-lucid
   * debian-jessie
   * debian-wheezy
+
+## apt repo setup
+
+The packages from this repo also get published to [bintray](https://bintray.com/davewongillies/fpm-recipes). Currently they are only built for Ubuntu 16.04. To add this repo to your system:
+1. `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv D401AB61`
+1. `echo "deb https://dl.bintray.com/davewongillies/fpm-recipes xenial main" | sudo tee -a /etc/apt/sources.list.d/davewongillies-fpm-recipes.list`
