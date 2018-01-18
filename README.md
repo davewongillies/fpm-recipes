@@ -6,6 +6,24 @@
 
 My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) recipes. Mostly tested against Ubuntu Xenial 16.04, some recipes might also work against Debian Jessie and Wheezy if you're/I'm lucky
 
+## Recipes
+|Name|Description|
+|----|-----------|
+|[attract](http://www.attractmode.org)|A graphical front-end for command line emulators that hides the underlying operating system and is intended to be controlled with a joystick or gamepad|
+|[autorandr](https://github.com/wertarbyte/autorandr)|Auto-detect the connect display hardware and load the appropiate X11 setup using xrandr or disper|
+|[ctop](https://ctop.sh)|Top-like interface for container metrics|
+|[docker-compose](https://github.com/docker/compose)|Define and run multi-container applications with Docker|
+|[envchain](https://github.com/sorah/envchain)|Environment variables meet gnome-keyring|
+|[lastpass-cli](https://github.com/lastpass/lastpass-cli)|A fast and easy-to-use status bar|
+|[polybar](https://github.com/jaagr/polybar)|A fast and easy-to-use status bar|
+|[previous](http://previous.alternative-system.com/)|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
+|[ranger](https://github.com/ranger/ranger)|A VIM-inspired filemanager for the console|
+|[runc](https://github.com/opencontainers/runc)|CLI tool for spawning and running containers according to the OCI specification|
+|[tflint](https://github.com/wata727/tflint)|TFLint is a Terraform linter for detecting errors that can not be detected by terraform plan|
+|[vimb-webkit2](https://github.com/fanglingsu/vimb)|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
+|[vimb](https://github.com/fanglingsu/vimb)|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
+|[xst](https://github.com/neeasade/xst)|xst is a fork of st, which is a simple terminal implementation for X.|
+
 ## Usage
 
 ```
