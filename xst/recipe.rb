@@ -1,7 +1,7 @@
 class Xst < FPM::Cookery::Recipe
   name     'xst'
   version  '0.7.1'
-  revision '1'
+  revision '2'
 
   description 'st fork'
   license     'MIT'
@@ -21,7 +21,10 @@ class Xst < FPM::Cookery::Recipe
   end
 
   def install
-   make :install, 'PREFIX' => '/usr', 'DESTDIR' => destdir
+    bin.install 'st'
+    man1.install 'doc/st.1'
+    info.install 'doc/st.info'
+    doc(name).install ['doc/FAQ', 'doc/LEGACY', 'doc/LICENSE', 'doc/TODO.md', 'doc/Xresources']
   end
 
 end
