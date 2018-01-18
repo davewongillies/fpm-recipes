@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=st
+Comment=xst is a fork of st, which is a simple terminal implementation for X.
+TryExec=st
+Exec=st
+Icon=utilities-terminal
+Type=Application
+Categories=Utility;TerminalEmulator;System;
+StartupNotify=true
+Keywords=terminal;shell;prompt;command;commandline;
