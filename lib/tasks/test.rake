@@ -16,7 +16,7 @@ namespace :test do
       recipes.sort.uniq.each do | recipe |
         Dir.chdir recipe do
           puts "===> Cooking #{recipe} on #{distro}"
-          system "docker run -e pkg_dir_uid=$(id -u) --rm -v $PWD:/data davewongillies/fpm-recipes:#{distro}" or raise "ERROR: Failed to cook #{recipe} on #{distro}"
+          system "docker -l warn run -e pkg_dir_uid=$(id -u) --rm -v $PWD:/data davewongillies/fpm-recipes:#{distro}" or raise "ERROR: Failed to cook #{recipe} on #{distro}"
           Dir['pkg/**/*.deb'].each do |deb|
             system "dpkg-deb -f #{deb}"
             system "dpkg-deb --contents #{deb}"
@@ -37,7 +37,7 @@ namespace :test do
 
     dockerfiles.each do | dockerfile |
       puts "===> Test dockerfile #{dockerfile}"
-      system "docker build -f #{dockerfile} ." or raise "ERROR: Failed #{dockerfile}"
+      system "docker -l warn build -f #{dockerfile} ." or raise "ERROR: Failed #{dockerfile}"
     end
   end
 
