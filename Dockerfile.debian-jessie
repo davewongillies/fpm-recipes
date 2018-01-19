@@ -15,7 +15,8 @@ RUN apt-get update -qq -y && apt-get install -q -y --no-install-recommends \
 RUN mkdir -p /root/.ssh && ssh-keyscan github.com >> /root/.ssh/known_hosts
 
 COPY Gemfile .
-RUN echo "gem: --no-ri --no-rdoc" >/etc/gemrc; bundle install --binstubs /usr/local/bin
+RUN echo "gem: --no-ri --no-rdoc" >/etc/gemrc; \
+    bundle install --without deployment --binstubs /usr/local/bin
 
 COPY run.sh /usr/local/bin/
 

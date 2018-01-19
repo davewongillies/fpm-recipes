@@ -22,7 +22,7 @@ RUN mkdir -p /root/.ssh && ssh-keyscan github.com >> /root/.ssh/known_hosts
 COPY Gemfile .
 RUN echo "gem: --no-ri --no-rdoc" >/etc/gemrc; \
     gem install bundler; \
-    bundle install --binstubs /usr/local/bin
+    bundle install --without deployment --binstubs /usr/local/bin
 
 COPY run.sh /usr/local/bin/
 
