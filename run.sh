@@ -2,7 +2,7 @@
 
 RECIPE=${1:-recipe.rb}
 
-if grep -qE "\s*(depends|build_depends)\s('|\")" "${RECIPE}"; then
+if grep -qE "\s*(depends|build_depends)\s*('|\")" "${RECIPE}"; then
     echo "===> Found depends in ${RECIPE}, updating apt cache..."
 	apt-get update -qq -y
 fi
