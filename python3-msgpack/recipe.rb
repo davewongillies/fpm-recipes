@@ -1,7 +1,7 @@
 class PythonNeovim < FPM::Cookery::PythonRecipe
   name       'msgpack'
   version    '0.5.1'
-  revision   '1'
+  revision   '2'
   homepage   'http://msgpack.org'
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
   license    'Apache-2.0'
@@ -17,5 +17,8 @@ class PythonNeovim < FPM::Cookery::PythonRecipe
     :python_bin                 => 'python3',
     :python_pip                 => 'pip3',
     :python_package_name_prefix => 'python3',
-    :python_setup_py_arguments  => ['--prefix', '/usr']
+    :python_setup_py_arguments  => [
+      '--prefix', '/usr',
+      '--install-layout', 'deb'
+    ]
 end
