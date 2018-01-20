@@ -1,6 +1,6 @@
 class Ranger < FPM::Cookery::Recipe
   name          'ranger'
-  description   'A VIM-inspired filemanager for the console http://ranger.nongnu.org/'
+  description   'A VIM-inspired filemanager for the console'
   version       '1.8.1'
   homepage      'https://github.com/ranger/ranger'
   source        "#{homepage}", :with => :git, :tag => "v#{version}"

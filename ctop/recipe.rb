@@ -3,7 +3,7 @@ class Ctop < FPM::Cookery::Recipe
   version  '0.6.1'
   revision '1'
 
-  description 'Top-like interface for container metrics https://ctop.sh'
+  description 'Top-like interface for container metrics'
 
   homepage 'https://ctop.sh'
   source   "https://github.com/bcicen/ctop/releases/download/v#{version}/#{name}-#{version}-linux-amd64"
