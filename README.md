@@ -15,6 +15,7 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |[docker-compose](https://github.com/docker/compose)|Define and run multi-container applications with Docker|
 |[envchain](https://github.com/sorah/envchain)|Environment variables meet gnome-keyring|
 |[lastpass-cli](https://github.com/lastpass/lastpass-cli)|A fast and easy-to-use status bar|
+|[neovim](https://github.com/neovim/python-client)||
 |[polybar](https://github.com/jaagr/polybar)|A fast and easy-to-use status bar|
 |[previous](http://previous.alternative-system.com/)|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
 |[ranger](https://github.com/ranger/ranger)|A VIM-inspired filemanager for the console|
