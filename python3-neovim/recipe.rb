@@ -11,6 +11,9 @@ class PythonNeovim < FPM::Cookery::PythonRecipe
   build_depends 'python3-setuptools', 'python3-pip'
   depends       'python3'
 
+  chain_package true
+  chain_recipes 'msgpack'
+
   fpm_attributes \
     :python_bin                 => 'python3',
     :python_pip                 => 'pip3',
