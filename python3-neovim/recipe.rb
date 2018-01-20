@@ -6,6 +6,8 @@ class PythonNeovim < FPM::Cookery::PythonRecipe
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
   license    'Apache-2.0'
 
+  description 'Python client to neovim'
+
   build_depends 'python3-setuptools', 'python3-pip'
   depends       'python3'
 
