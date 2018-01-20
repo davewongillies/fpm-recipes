@@ -2,9 +2,10 @@
 
 RECIPE=${1:-recipe.rb}
 
-if grep -qE "\s*(depends|build_depends)\s*('|\")" "${RECIPE}"; then
+DEPENDS=$(fpm-cook inspect "${RECIPE}" | jq '.build_depends + .depends | length')
+if [[ $DEPENDS -gt 0 ]] ; then
     echo "===> Found depends in ${RECIPE}, updating apt cache..."
-	apt-get update -qq -y
+    apt-get update -qq -y
 fi
 
 if fpm-cook -q package --tmp-root /tmp --pkg-dir pkg/${DISTRIBUTION}/${RELEASE} ${RECIPE} ;then

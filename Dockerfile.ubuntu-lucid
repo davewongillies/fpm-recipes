@@ -26,6 +26,9 @@ RUN echo "gem: --no-ri --no-rdoc" >/etc/gemrc; \
 
 COPY run.sh /usr/local/bin/
 
+RUN curl -sL https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 > /usr/local/bin/jq ; \
+    chmod +x /usr/local/bin/jq
+
 VOLUME /data
 WORKDIR /data
 
