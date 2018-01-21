@@ -15,7 +15,7 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |[docker-compose](https://github.com/docker/compose)|Define and run multi-container applications with Docker|
 |[envchain](https://github.com/sorah/envchain)|Environment variables meet gnome-keyring|
 |[lastpass-cli](https://github.com/lastpass/lastpass-cli)|A fast and easy-to-use status bar|
-|[msgpack](http://msgpack.org)|MessagePack (de)serializer|
+|[libcec-daemon](https://github.com/bramp/libcec-daemon)|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
 |[neovim](https://github.com/neovim/python-client)|Python client to neovim|
 |[polybar](https://github.com/jaagr/polybar)|A fast and easy-to-use status bar|
 |[previous](http://previous.alternative-system.com/)|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
