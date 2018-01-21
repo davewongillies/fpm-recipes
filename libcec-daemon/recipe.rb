@@ -1,18 +1,19 @@
 class LibcecDaemon < FPM::Cookery::Recipe
   name 'libcec-daemon'
-  version '0.9'
+  version '0.9.5'
   revision '1'
 
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
   license    'BSD 2-Clause'
 
-  homepage "https://github.com/bramp/#{name}"
+  homepage "https://github.com/benklop/#{name}"
   source "#{homepage}.git",
     :with => 'git'
 
   description 'A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!'
   build_depends 'build-essential', \
     'autoconf', \
+    'cmake', \
     'libboost-program-options-dev', \
     'libboost-system-dev',\
     'libboost-thread-dev', \
@@ -42,9 +43,10 @@ class LibcecDaemon < FPM::Cookery::Recipe
   end
 
   def build
-    patch workdir('patches/configure.ac.diff')
-    safesystem './bootstrap'
-    configure 'prefix' => '/usr'
+    # patch workdir('patches/configure.ac.diff')
+    # safesystem './bootstrap'
+    # configure 'prefix' => '/usr'
+    safesystem 'cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr'
     make
   end
 
