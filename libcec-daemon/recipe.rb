@@ -11,41 +11,38 @@ class LibcecDaemon < FPM::Cookery::Recipe
     :with => 'git'
 
   description 'A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!'
-  build_depends 'build-essential', \
-    'autoconf', \
-    'cmake', \
-    'libboost-program-options-dev', \
-    'libboost-system-dev',\
-    'libboost-thread-dev', \
-    'libcec-platform-dev', \
-    'liblog4cplus-dev', \
+  build_depends 'build-essential',
+    'autoconf',
+    'cmake',
+    'libboost-program-options-dev',
+    'libboost-system-dev',
+    'libboost-thread-dev',
+    'libcec-platform-dev',
+    'liblog4cplus-dev',
     'libcec-dev'
 
   case FPM::Cookery::Facts.platform
   when :ubuntu
     case FPM::Cookery::Facts.osrelease
     when '16.04'
-      depends 'libcec3', \
-        'libboost-program-options1.58.0', \
-        'libboost-system1.58.0', \
-        'libboost-thread1.58.0', \
+      depends 'libcec3',
+        'libboost-program-options1.58.0',
+        'libboost-system1.58.0',
+        'libboost-thread1.58.0',
         'liblog4cplus-1.1-9'
     end
   when :debian
     case FPM::Cookery::Facts.osrelease
     when '8.0'
-      depends 'libcec3', \
-        'libboost-program-options1.55.0', \
-        'libboost-system1.55.0', \
-        'libboost-thread1.55.0', \
+      depends 'libcec3',
+        'libboost-program-options1.55.0',
+        'libboost-system1.55.0',
+        'libboost-thread1.55.0',
         'liblog4cplus-1.0-4'
     end
   end
 
   def build
-    # patch workdir('patches/configure.ac.diff')
-    # safesystem './bootstrap'
-    # configure 'prefix' => '/usr'
     safesystem 'cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr'
     make
   end
