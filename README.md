@@ -15,7 +15,7 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |[docker-compose](https://github.com/docker/compose)|Define and run multi-container applications with Docker|
 |[envchain](https://github.com/sorah/envchain)|Environment variables meet gnome-keyring|
 |[lastpass-cli](https://github.com/lastpass/lastpass-cli)|A fast and easy-to-use status bar|
-|[libcec-daemon](https://github.com/bramp/libcec-daemon)|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
+|[libcec-daemon](https://github.com/benklop/libcec-daemon)|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
 |[neovim](https://github.com/neovim/python-client)|Python client to neovim|
 |[polybar](https://github.com/jaagr/polybar)|A fast and easy-to-use status bar|
 |[previous](http://previous.alternative-system.com/)|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
@@ -25,6 +25,7 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |[vimb-webkit2](https://github.com/fanglingsu/vimb)|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
 |[vimb](https://github.com/fanglingsu/vimb)|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
 |[xst](https://github.com/neeasade/xst)|xst is a fork of st, which is a simple terminal implementation for X.|
+|[zeal](https://zealdocs.org)|Offline documentation browser inspired by Dash|
 
 ## Usage
 
