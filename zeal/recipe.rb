@@ -4,8 +4,9 @@ class Zeal < FPM::Cookery::Recipe
   maintainer  'Dave Wongillies <dave.gillies@gmail.com>'
   license     'GPL-3.0'
 
-  version  '0.6.0'
-  revision '1'
+  EPOCH = "2:"
+  version  "#{EPOCH}0.6.0"
+  revision '2'
 
   homepage 'https://zealdocs.org'
   source   'https://github.com/zealdocs/zeal.git',
