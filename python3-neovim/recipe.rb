@@ -1,6 +1,6 @@
 class PythonNeovim < FPM::Cookery::PythonRecipe
   name       'neovim'
-  version    '0.2.0'
+  version    '0.2.4'
   revision   '2'
   homepage   'https://github.com/neovim/python-client'
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
