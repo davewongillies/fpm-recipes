@@ -1,11 +1,11 @@
 class Swift < FPM::Cookery::Recipe
   name     'swift-lang'
   version  '4.1.3'
-  revision '1'
+  revision '2'
 
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
   license    'Apache-2.0'
-  depends    'clang-5.0', 'python'
+  depends    'clang', 'clang-5.0', 'python', 'libicu55', 'libcurl3', 'libxml2'
 
   osrel = FPM::Cookery::Facts.osrelease.sub('.', '')
 
