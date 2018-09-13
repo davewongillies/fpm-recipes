@@ -33,7 +33,7 @@ namespace :test do
   task :build do
     dockerfiles = []
     changed_dockerfiles = `git diff-tree -r --no-commit-id --name-only --diff-filter=ACMRTUXB HEAD~1 HEAD -- Dockerfile.*`
-    changed_dockerfiles.each_line {|line| dockerfiles << line.split('/')[0]}
+    changed_dockerfiles.each_line {|line| dockerfiles << line.split('/')[0].gsub("\n", '')}
 
     dockerfiles.each do | dockerfile |
       puts "===> Test dockerfile #{dockerfile}"
