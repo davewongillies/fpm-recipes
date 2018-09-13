@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'rake', '< 12'
+
 group :deployment do
-  gem 'rake', '< 12'
   gem 'httparty'
   gem 'dpkg-deb'
 end
