@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/bernd/fpm-cookery.git
-  revision: 7fb980524277c2ee8312159a44d419a66fb7906b
+  revision: 051cc162f874bfc026b6bc051606d5b8813c1f06
   branch: master
   specs:
     fpm-cookery (0.33.0)
@@ -16,19 +16,21 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    CFPropertyList (2.3.6)
     addressable (2.3.8)
     arr-pm (0.0.10)
       cabin (> 0)
-    backports (3.10.3)
+    backports (3.11.4)
     cabin (0.9.0)
-    childprocess (0.8.0)
+    childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
     clamp (1.0.1)
-    dotenv (2.2.1)
+    dotenv (2.5.0)
     dpkg-deb (0.1.0)
     facter (2.5.1)
-    ffi (1.9.18)
-    fpm (1.9.3)
+      CFPropertyList (~> 2.2)
+    ffi (1.9.25)
+    fpm (1.10.2)
       arr-pm (~> 0.0.10)
       backports (>= 2.6.2)
       cabin (>= 0.6.0)
@@ -37,11 +39,11 @@ GEM
       ffi
       json (>= 1.7.7, < 2.0)
       pleaserun (~> 0.0.29)
-      ruby-xz
+      ruby-xz (~> 0.2.3)
       stud
     hiera (1.3.4)
       json_pure
-    httparty (0.15.6)
+    httparty (0.16.2)
       multi_xml (>= 0.5.2)
     insist (1.0.0)
     io-like (0.3.0)
@@ -78,4 +80,4 @@ DEPENDENCIES
   rake (< 12)
 
 BUNDLED WITH
-   1.15.1
+   1.16.1
