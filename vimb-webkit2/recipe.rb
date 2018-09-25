@@ -1,7 +1,7 @@
 class VimbWebkit2 < FPM::Cookery::Recipe
   name     'vimb-webkit2'
-  version  '3.0'
-  revision 'alpha-2'
+  version  '3.2.0'
+  revision '1'
 
   description 'Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.'
   license     'GPL-3.0'
@@ -11,7 +11,7 @@ class VimbWebkit2 < FPM::Cookery::Recipe
   homepage 'https://github.com/fanglingsu/vimb'
   source   'https://github.com/fanglingsu/vimb.git',
     :with      => 'git',
-    :ref       => 'd5901f54976733d9413b98974a533b08d33edf9e',
+    :tag       => version,
     :submodule => true
 
   build_depends 'libsoup2.4-dev', 'libgtk-3-dev', 'libwebkit2gtk-4.0-dev'
