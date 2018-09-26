@@ -21,7 +21,10 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |[previous](http://previous.alternative-system.com/)|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
 |[ranger](https://github.com/ranger/ranger)|A VIM-inspired filemanager for the console|
 |[runc](https://github.com/opencontainers/runc)|CLI tool for spawning and running containers according to the OCI specification|
+|[smenu](https://github.com/p-gen/smenu)|Terminal utility that allows you to use words coming from the standard input to create a nice selection window just below the cursor.|
+|[swift-lang](https://swift.org)|Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns.|
 |[tflint](https://github.com/wata727/tflint)|TFLint is a Terraform linter for detecting errors that can not be detected by terraform plan|
+|[trailer-cli](https://github.com/ptsochantaris/trailer-cli)|Managing Pull Requests and Issues For GitHub & GitHub Enterprise from the command line|
 |[vimb-webkit2](https://github.com/fanglingsu/vimb)|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
 |[vimb](https://github.com/fanglingsu/vimb)|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
 |[xst](https://github.com/neeasade/xst)|xst is a fork of st, which is a simple terminal implementation for X.|
