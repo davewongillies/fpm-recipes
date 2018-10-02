@@ -1,7 +1,7 @@
 class Envchain < FPM::Cookery::Recipe
   name 'envchain'
   version '1.0.1'
-  revision '2'
+  revision '3'
 
   homepage "https://github.com/sorah/#{name}"
   source "https://github.com/sorah/#{name}.git",
