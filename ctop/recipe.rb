@@ -1,6 +1,6 @@
 class Ctop < FPM::Cookery::Recipe
   name     'ctop'
-  version  '0.6.1'
+  version  '0.7.1'
   revision '1'
 
   description 'Top-like interface for container metrics'
