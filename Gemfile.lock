@@ -16,7 +16,6 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    CFPropertyList (2.3.6)
     addressable (2.3.8)
     arr-pm (0.0.10)
       cabin (> 0)
@@ -28,7 +27,6 @@ GEM
     dotenv (2.5.0)
     dpkg-deb (0.1.0)
     facter (2.5.1)
-      CFPropertyList (~> 2.2)
     ffi (1.9.25)
     fpm (1.10.2)
       arr-pm (~> 0.0.10)
@@ -69,6 +67,7 @@ GEM
     safe_yaml (1.0.4)
     stud (0.0.23)
     systemu (2.6.5)
+    xmlrpc (0.3.0)
 
 PLATFORMS
   ruby
@@ -78,6 +77,7 @@ DEPENDENCIES
   fpm-cookery!
   httparty
   rake (< 12)
+  xmlrpc
 
 BUNDLED WITH
    1.16.1

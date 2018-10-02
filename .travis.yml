@@ -2,17 +2,18 @@ dist: trusty
 sudo: required
 language: ruby
 rvm: 2.1.10
+env:
+  - DISTRO=ubuntu-xenial
+  - DISTRO=ubuntu-bionic
 cache: bundler
 service:
 - docker
 bundler_args: "--without system_tests --without production"
-matrix:
-  fast_finish: true
-  include:
 stages:
 - build
 - cook
 jobs:
+  fast_finish: true
   include:
   - stage: cook
     env: DISTRO=ubuntu-xenial
