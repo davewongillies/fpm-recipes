@@ -1,10 +1,8 @@
+---
 dist: trusty
 sudo: required
 language: ruby
 rvm: 2.1.10
-env:
-  - DISTRO=ubuntu-xenial
-  - DISTRO=ubuntu-bionic
 cache: bundler
 service:
   - docker
@@ -16,12 +14,23 @@ jobs:
   fast_finish: true
   include:
     - stage: cook
+      env: DISTRO=ubuntu-xenial
       script: bundle exec rake test:cook distro=$DISTRO
       deploy:
         provider: script
         script: scripts/deploy.sh
         skip_cleanup: true
+    - env: DISTRO=ubuntu-bionic
+      script: bundle exec rake test:cook distro=$DISTRO
+      deploy:
+        provider: script
+        script: scripts/deploy.sh
+        skip_cleanup: true
+
     - stage: build
+      env: DISTRO=ubuntu-xenial
+      script: bundle exec rake test:build distro=$DISTRO
+    - env: DISTRO=ubuntu-bionic
       script: bundle exec rake test:build distro=$DISTRO
 env:
   global:
