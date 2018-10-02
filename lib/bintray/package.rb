@@ -48,7 +48,7 @@ module Bintray
       fields  = Dpkg::Deb.fields(file_path)
 
       fn      = File.basename(file_path)
-      repo_fp = "pool/#{component}/#{fields['Package'][0]}/#{fields['Package']}/#{fn}"
+      repo_fp = "#{distro}/pool/#{component}/#{fields['Package'][0]}/#{fields['Package']}/#{fn}"
 
       if not get_package(fields['Package'], repo)
         create_package(fields['Package'], repo, [fields['License']]) or raise "Failed to create package #{fields['Package']}"
