@@ -5,7 +5,7 @@ class Zeal < FPM::Cookery::Recipe
   license     'GPL-3.0'
 
   EPOCH = "2:"
-  version  "#{EPOCH}0.6.0"
+  version  "#{EPOCH}0.6.1"
   revision '3'
 
   homepage 'https://zealdocs.org'
