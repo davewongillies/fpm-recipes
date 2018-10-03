@@ -2,8 +2,8 @@ class LastPassCli < FPM::Cookery::Recipe
 
 
   name     'lastpass-cli'
-  version  '1.2.2'
-  revision '4'
+  version  '1.3.1'
+  revision '1'
 
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
   license    'GPL-2.0'
