@@ -37,8 +37,9 @@ $ ./fpm-cook.sh <recipe_dir_name> (optional <distro-code-name>)
 ```
 
 Options for distro:
-  * ubuntu-bionic 18.04
-  * ubuntu-xenial 16.04
+
+  * ubuntu-bionic
+  * ubuntu-xenial
 
 ## apt repo setup
 
