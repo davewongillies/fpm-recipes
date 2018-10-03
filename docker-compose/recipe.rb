@@ -6,8 +6,8 @@ class DockerCompose < FPM::Cookery::Recipe
 
   maintainer  'Dave Wongillies <dave.gillies@gmail.com>'
 
-  version  '1.18.0'
-  revision '2'
+  version  '1.22.0'
+  revision '1'
 
   source "#{homepage}/releases/download/#{version}/#{name}-Linux-x86_64"
 
