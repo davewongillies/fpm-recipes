@@ -1,7 +1,7 @@
 class Swift < FPM::Cookery::Recipe
   name     'swift-lang'
-  version  '4.1.3'
-  revision '2'
+  version  '4.2'
+  revision '1'
 
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
   license    'Apache-2.0'
