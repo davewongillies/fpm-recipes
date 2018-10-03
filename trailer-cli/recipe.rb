@@ -1,7 +1,7 @@
 class TrailerCli < FPM::Cookery::Recipe
   name     'trailer-cli'
   version  '1.0.8'
-  revision '2'
+  revision '3'
 
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
   license    'GPL-2.0'
