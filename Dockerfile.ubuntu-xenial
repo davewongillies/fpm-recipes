@@ -7,11 +7,11 @@ ENV REFRESHED_AT 2018-09-13
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -qq -y && apt-get install -q -y --no-install-recommends \
-    build-essential curl git ruby bundler ruby-dev lsb-release ca-certificates dash unzip openssh-client jq apt-transport-https; \
+    apt-transport-https build-essential bundler ca-certificates curl dash git \
+    jq lsb-release openssh-client ruby ruby-dev unzip; \
     apt-get dist-upgrade -q -y --force-yes; \
     apt-key adv --keyserver keyserver.ubuntu.com --recv 379CE192D401AB61; \
     echo "deb [arch=amd64] https://dl.bintray.com/davewongillies/fpm-recipes ${RELEASE} main" > /etc/apt/sources.list.d/fpm-recipes.list ; \
-    apt-get update -qq -y; \
     apt-get clean ; \
     rm -rf /var/lib/apt/lists/*
 
