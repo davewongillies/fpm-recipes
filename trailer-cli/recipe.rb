@@ -13,8 +13,7 @@ class TrailerCli < FPM::Cookery::Recipe
     :with => :git,
     :tag  => version
 
-  description 'Managing Pull Requests and Issues For GitHub & GitHub Enterprise from the command line
-'
+  description 'Managing Pull Requests and Issues For GitHub & GitHub Enterprise from the command line'
 
   def build
     build_options = '-c release -Xswiftc -Ounchecked -Xswiftc -whole-module-optimization'
