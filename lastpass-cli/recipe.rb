@@ -13,7 +13,7 @@ class LastPassCli < FPM::Cookery::Recipe
     :with => 'git',
     :tag  => "v#{version}"
 
-  description 'A fast and easy-to-use status bar'
+  description 'LastPass command line interface tool'
 
   build_depends 'libcurl4-openssl-dev',
     'libssl-dev',
