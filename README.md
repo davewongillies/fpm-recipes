@@ -14,7 +14,7 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |[ctop](https://ctop.sh)|Top-like interface for container metrics|
 |[docker-compose](https://github.com/docker/compose)|Define and run multi-container applications with Docker|
 |[envchain](https://github.com/sorah/envchain)|Environment variables meet gnome-keyring|
-|[lastpass-cli](https://github.com/lastpass/lastpass-cli)|A fast and easy-to-use status bar|
+|[lastpass-cli](https://github.com/lastpass/lastpass-cli)|LastPass command line interface tool|
 |[libcec-daemon](https://github.com/benklop/libcec-daemon)|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
 |[neovim](https://github.com/neovim/python-client)|Python client to neovim|
 |[polybar](https://github.com/jaagr/polybar)|A fast and easy-to-use status bar|
