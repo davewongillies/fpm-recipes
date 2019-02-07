@@ -1,6 +1,6 @@
 class Polybar < FPM::Cookery::Recipe
   name 'polybar'
-  version '3.2.1'
+  version '3.3.0'
   revision '1'
 
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
@@ -18,14 +18,16 @@ class Polybar < FPM::Cookery::Recipe
     'i3-wm',
     'libasound2-dev',
     'libcairo2-dev',
+    'libcurlpp-dev',
     'libcurl4-openssl-dev',
     'libfontconfig1-dev',
     'libfreetype6-dev',
     'libghc-x11-xft-dev',
     'libiw-dev',
-    'libiw-dev',
     'libjsoncpp-dev',
     'libmpdclient-dev',
+    'libnl-genl-3-dev',
+    'libpulse-dev',
     'libx11-xcb-dev',
     'libxcb-ewmh-dev',
     'libxcb-icccm4-dev',

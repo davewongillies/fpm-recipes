@@ -3,7 +3,7 @@
 RECIPE_PATH=${1}
 
 if [[ ! -z "${RECIPE_PATH}" ]]; then
-    DISTRO="${2:-ubuntu-xenial}"
+    DISTRO="${2:-ubuntu-bionic}"
     DOCKER_IMAGE="davewongillies/fpm-recipes"
 
 
