@@ -1,13 +1,13 @@
 class Polybar < FPM::Cookery::Recipe
   name 'polybar'
-  version '3.3.0'
+  version '3.3.1'
   revision '1'
 
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
   license    'MIT'
 
-  homepage "https://github.com/jaagr/#{name}"
-  source "https://github.com/jaagr/#{name}.git",
+  homepage "https://github.com/polybar/#{name}"
+  source "https://github.com/polybar/#{name}.git",
     :with      => 'git',
     :submodule => true
 
