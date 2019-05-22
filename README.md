@@ -7,28 +7,28 @@
 My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) recipes. Mostly tested against Ubuntu Xenial 16.04, some recipes might also work against Debian Jessie and Wheezy if you're/I'm lucky
 
 ## Recipes
-|Name|Description|
-|----|-----------|
-|[attract](http://www.attractmode.org)|A graphical front-end for command line emulators that hides the underlying operating system and is intended to be controlled with a joystick or gamepad|
-|[autorandr](https://github.com/wertarbyte/autorandr)|Auto-detect the connect display hardware and load the appropiate X11 setup using xrandr or disper|
-|[ctop](https://ctop.sh)|Top-like interface for container metrics|
-|[docker-compose](https://github.com/docker/compose)|Define and run multi-container applications with Docker|
-|[envchain](https://github.com/sorah/envchain)|Environment variables meet gnome-keyring|
-|[lastpass-cli](https://github.com/lastpass/lastpass-cli)|LastPass command line interface tool|
-|[libcec-daemon](https://github.com/benklop/libcec-daemon)|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
-|[neovim](https://github.com/neovim/python-client)|Python client to neovim|
-|[polybar](https://github.com/jaagr/polybar)|A fast and easy-to-use status bar|
-|[previous](http://previous.alternative-system.com/)|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
-|[ranger](https://github.com/ranger/ranger)|A VIM-inspired filemanager for the console|
-|[runc](https://github.com/opencontainers/runc)|CLI tool for spawning and running containers according to the OCI specification|
-|[smenu](https://github.com/p-gen/smenu)|Terminal utility that allows you to use words coming from the standard input to create a nice selection window just below the cursor.|
-|[swift-lang](https://swift.org)|Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns.|
-|[tflint](https://github.com/wata727/tflint)|TFLint is a Terraform linter for detecting errors that can not be detected by terraform plan|
-|[trailer-cli](https://github.com/ptsochantaris/trailer-cli)|Managing Pull Requests and Issues For GitHub & GitHub Enterprise from the command line|
-|[vimb-webkit2](https://github.com/fanglingsu/vimb)|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
-|[vimb](https://github.com/fanglingsu/vimb)|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
-|[xst](https://github.com/neeasade/xst)|xst is a fork of st, which is a simple terminal implementation for X.|
-|[zeal](https://zealdocs.org)|Offline documentation browser inspired by Dash|
+|Name|Version|Description|
+|----|-------|-----------|
+|[attract](http://www.attractmode.org)|2.3.0-1|A graphical front-end for command line emulators that hides the underlying operating system and is intended to be controlled with a joystick or gamepad|
+|[autorandr](https://github.com/wertarbyte/autorandr)|0.0.33-2~4f5e240|Auto-detect the connect display hardware and load the appropiate X11 setup using xrandr or disper|
+|[ctop](https://ctop.sh)|0.7.1-2|Top-like interface for container metrics|
+|[docker-compose](https://github.com/docker/compose)|1.22.0-1|Define and run multi-container applications with Docker|
+|[envchain](https://github.com/sorah/envchain)|1.0.1-3|Environment variables meet gnome-keyring|
+|[lastpass-cli](https://github.com/lastpass/lastpass-cli)|1.3.1-2|LastPass command line interface tool|
+|[libcec-daemon](https://github.com/benklop/libcec-daemon)|0.9.5-1|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
+|[neovim](https://github.com/neovim/python-client)|0.2.4-2|Python client to neovim|
+|[polybar](https://github.com/polybar/polybar)|3.3.1-1|A fast and easy-to-use status bar|
+|[previous](http://previous.alternative-system.com/)|2.0+svn885-1|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
+|[ranger](https://github.com/ranger/ranger)|1.8.1-1|A VIM-inspired filemanager for the console|
+|[runc](https://github.com/opencontainers/runc)|1.0.0-rc2-1|CLI tool for spawning and running containers according to the OCI specification|
+|[smenu](https://github.com/p-gen/smenu)|0.9.14-1|Terminal utility that allows you to use words coming from the standard input to create a nice selection window just below the cursor.|
+|[swift-lang](https://swift.org)|4.2-2|Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns.|
+|[tflint](https://github.com/wata727/tflint)|0.7.2-1|TFLint is a Terraform linter for detecting errors that can not be detected by terraform plan|
+|[trailer-cli](https://github.com/ptsochantaris/trailer-cli)|1.0.8-3|Managing Pull Requests and Issues For GitHub & GitHub Enterprise from the command line|
+|[vimb-webkit2](https://github.com/fanglingsu/vimb)|3.2.0-1|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
+|[vimb](https://github.com/fanglingsu/vimb)|2.12-4|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
+|[xst](https://github.com/neeasade/xst)|0.7.1-4|xst is a fork of st, which is a simple terminal implementation for X.|
+|[zeal](https://zealdocs.org)|2:0.6.1-3|Offline documentation browser inspired by Dash|
 
 ## Usage
 

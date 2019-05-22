@@ -10,7 +10,7 @@ namespace :readme do
     recipes.each do |recipe|
      r = `bundle exec fpm-cook inspect #{recipe}`
      r = JSON.parse(r)
-     recipe_table << "|[#{r['name']}](#{r['homepage']})|#{r['description']}|"
+     recipe_table << "|[#{r['name']}](#{r['homepage']})|#{r['version']}-#{r['revision']}|#{r['description']}|"
     end
 
     readme_template = File.read('lib/tasks/README.md.erb')
