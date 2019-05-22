@@ -1,0 +1,32 @@
+---
+version: 2
+jobs:
+  publish:
+    docker:
+      - image: circleci/buildpack-deps:bionic-dind
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+        name: Publishing packages
+        command: scripts/deploy.sh
+  cook:
+    docker:
+      - image: circleci/buildpack-deps:bionic-dind
+    steps:
+      - checkout
+      - run:
+        name: Cooking packages
+        command: bundle exec rake test:cook distro=bionic
+workflows:
+  version: 2
+  cook_and_publish:
+    jobs:
+      - cook
+      - publish:
+          type: approval
+          filters:
+            branches:
+              only: master
+          requires:
+            - cook
