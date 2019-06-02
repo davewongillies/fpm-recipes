@@ -1,7 +1,7 @@
 class Meson < FPM::Cookery::PythonRecipe
   name       'meson'
   version    '0.50.1'
-  revision   '1'
+  revision   '2'
   homepage   'http://mesonbuild.com/'
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
   license    'Apache-2.0'
@@ -9,7 +9,7 @@ class Meson < FPM::Cookery::PythonRecipe
   description 'The Meson Build System'
 
   build_depends 'python3-setuptools', 'python3-pip'
-  depends       'python3'
+  depends       'python3', 'python3-pip'
 
   fpm_attributes \
     :python_bin                 => 'python3',

@@ -16,6 +16,7 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |[envchain](https://github.com/sorah/envchain)|1.0.1-3|Environment variables meet gnome-keyring|
 |[lastpass-cli](https://github.com/lastpass/lastpass-cli)|1.3.1-2|LastPass command line interface tool|
 |[libcec-daemon](https://github.com/benklop/libcec-daemon)|0.9.5-1|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
+|[meson](http://mesonbuild.com/)|0.50.1-2|The Meson Build System|
 |[neovim](https://github.com/neovim/python-client)|0.2.4-2|Python client to neovim|
 |[polybar](https://github.com/polybar/polybar)|3.3.1-1|A fast and easy-to-use status bar|
 |[previous](http://previous.alternative-system.com/)|2.0+svn885-1|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
