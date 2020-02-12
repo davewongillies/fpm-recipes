@@ -18,7 +18,7 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |[libcec-daemon](https://github.com/benklop/libcec-daemon)|0.9.5-1|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
 |[meson](http://mesonbuild.com/)|0.50.1-2|The Meson Build System|
 |[neovim](https://github.com/neovim/python-client)|0.2.4-2|Python client to neovim|
-|[polybar](https://github.com/polybar/polybar)|3.3.1-1|A fast and easy-to-use status bar|
+|[polybar](https://github.com/polybar/polybar)|3.4.2-1|A fast and easy-to-use status bar|
 |[previous](http://previous.alternative-system.com/)|2.0+svn885-1|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
 |[ranger](https://github.com/ranger/ranger)|1.8.1-1|A VIM-inspired filemanager for the console|
 |[runc](https://github.com/opencontainers/runc)|1.0.0-rc2-1|CLI tool for spawning and running containers according to the OCI specification|
