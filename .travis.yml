@@ -1,8 +1,9 @@
 ---
-dist: trusty
+dist: xenial
 sudo: required
 language: ruby
-rvm: 2.1.10
+rvm:
+  - 2.5
 cache: bundler
 service:
   - docker
