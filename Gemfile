@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rake', '>= 12.3.3'
-gem 'ffi', '1.9.18'
+gem 'ffi', '1.9.25'
 
 group :deployment do
   gem 'httparty'

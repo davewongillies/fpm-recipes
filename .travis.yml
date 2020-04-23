@@ -7,7 +7,6 @@ rvm:
 cache: bundler
 service:
   - docker
-bundler_args: "--without system_tests --without production"
 stages:
   - build
   - cook
