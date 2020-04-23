@@ -7,6 +7,9 @@ rvm:
 cache: bundler
 service:
   - docker
+before_install:
+  - yes | gem update --system --force
+  - gem install bundler
 stages:
   - build
   - cook
