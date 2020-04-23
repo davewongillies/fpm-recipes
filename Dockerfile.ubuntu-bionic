@@ -3,12 +3,24 @@ FROM ubuntu:bionic
 MAINTAINER David Gillies <dave.gillies@gmail.com>
 ENV DISTRIBUTION ubuntu
 ENV RELEASE bionic
-ENV REFRESHED_AT 2018-10-01
+ENV REFRESHED_AT 2020-04-23
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update -qq -y && apt-get install -qq -y --no-install-recommends   \
-    apt-transport-https build-essential bundler ca-certificates curl dash git \
-    gnupg jq lsb-release openssh-client ruby-dev unzip ; \
+RUN apt-get update -qq -y && \
+    apt-get install -qq -y --no-install-recommends \
+      apt-transport-https \
+      build-essential \
+      bundler \
+      ca-certificates \
+      curl \
+      dash \
+      git \
+      gnupg \
+      jq \
+      lsb-release \
+      openssh-client \
+      ruby-dev \
+      unzip ; \
     apt-get dist-upgrade -qq -y --force-yes; \
     apt-key adv --keyserver keyserver.ubuntu.com --recv 379CE192D401AB61; \
     echo "deb [arch=amd64] https://dl.bintray.com/davewongillies/fpm-recipes ${RELEASE} main" \
@@ -22,10 +34,6 @@ COPY Gemfile .
 RUN gem install bundler; echo "gem: --no-ri --no-rdoc" >/etc/gemrc; \
     bundle install --without deployment \
                    --binstubs /usr/local/bin
-
-# Horrible crap to make this work with ruby 2.5 and greater
-COPY monkey_patches.diff .
-RUN patch -p0 < monkey_patches.diff
 
 COPY run.sh /usr/local/bin/
 
