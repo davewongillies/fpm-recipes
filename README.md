@@ -14,7 +14,7 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |[ctop](https://ctop.sh)|0.7.1-2|Top-like interface for container metrics|
 |[docker-compose](https://github.com/docker/compose)|1.22.0-1|Define and run multi-container applications with Docker|
 |[envchain](https://github.com/sorah/envchain)|1.0.1-3|Environment variables meet gnome-keyring|
-|[lastpass-cli](https://github.com/lastpass/lastpass-cli)|1.3.3-2|LastPass command line interface tool|
+|[lastpass-cli](https://github.com/lastpass/lastpass-cli)|1.3.3-3|LastPass command line interface tool|
 |[libcec-daemon](https://github.com/benklop/libcec-daemon)|0.9.5-1|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
 |[meson](http://mesonbuild.com/)|0.50.1-2|The Meson Build System|
 |[neovim](https://github.com/neovim/python-client)|0.2.4-2|Python client to neovim|
@@ -39,11 +39,12 @@ $ ./fpm-cook.sh <recipe_dir_name> (optional <distro-code-name>)
 
 Options for distro:
 
+  * ubuntu-focal
   * ubuntu-bionic
   * ubuntu-xenial
 
 ## apt repo setup
 
-The packages from this repo also get published to [bintray](https://bintray.com/davewongillies/fpm-recipes). Currently they are only built for Ubuntu 16.04. To add this repo to your system:
+The packages from this repo also get published to [bintray](https://bintray.com/davewongillies/fpm-recipes). Currently they are only built for Ubuntu 16.04 and 18.04. To add this repo to your system:
 1. `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv D401AB61`
 1. `echo "deb https://dl.bintray.com/davewongillies/fpm-recipes xenial main" | sudo tee -a /etc/apt/sources.list.d/davewongillies-fpm-recipes.list`
