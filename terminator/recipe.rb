@@ -1,19 +1,20 @@
 class Terminator < FPM::Cookery::Recipe
   name       'terminator'
-  version    '1.92'
-  git_ref =  '9e05a5d'
-  revision   "1~g#{git_ref}"
+  version    '2.0.1'
+  # git_ref =  '9e05a5d'
+  # revision   "1~g#{git_ref}"
+  revision   "1"
   homepage   'https://github.com/gnome-terminator/terminator'
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
   license    'GPL-2.0'
   source     "https://github.com/gnome-terminator/#{name}.git",
     :with => 'git',
-    :sha  => git_ref
-    # :tag  => "v#{version}"
+    # :sha  => git_ref
+    :tag  => "v#{version}"
 
   description 'multiple GNOME terminals in one window'
 
-  build_depends 'python3-setuptools'
+  build_depends 'python3-setuptools', 'python3-babel'
   depends       'python3',
                 'python3-gi',
                 'python3-gi-cairo',
