@@ -5,12 +5,12 @@ ENV DISTRIBUTION ubuntu
 ENV RELEASE focal
 ENV REFRESHED_AT 2020-04-26
 ENV DEBIAN_FRONTEND noninteractive
+ENV FPM_COOKERY_VERSION 0.35.1
 
 RUN apt-get update -qq -y && \
     apt-get install -qq -y --no-install-recommends \
       apt-transport-https \
       build-essential \
-      bundler \
       ca-certificates \
       curl \
       dash \
@@ -19,21 +19,29 @@ RUN apt-get update -qq -y && \
       jq \
       lsb-release \
       openssh-client \
-      ruby-dev \
-      unzip ; \
-    apt-get dist-upgrade -qq -y --force-yes; \
-    apt-key adv --keyserver keyserver.ubuntu.com --recv 379CE192D401AB61; \
-    # echo "deb [arch=amd64] https://dl.bintray.com/davewongillies/fpm-recipes ${RELEASE} main" \
-      # > /etc/apt/sources.list.d/fpm-recipes.list ; \
+      unzip \
+      # Build depends
+      libffi-dev \
+      zlib1g-dev \
+      && \
+    apt-get dist-upgrade -qq -y --force-yes ; \
+    apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 379CE192D401AB61 && \
+    echo "deb [arch=amd64] https://dl.bintray.com/davewongillies/fpm-recipes ${RELEASE} main" \
+      > /etc/apt/sources.list.d/fpm-recipes.list ; \
+    apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 71189047E2950F8334DFEA0C99890E4392E8864B && \
+    # ruby 2.6
+    echo "deb http://ppa.launchpad.net/ticketsolve/ruby-builds/ubuntu focal main" \
+      > /etc/apt/sources.list.d/ruby.list ; \
+    apt-get update ; \
+    apt-get install -y ruby2.6 && \
+    gem install -N fpm-cookery -v ${FPM_COOKERY_VERSION} && \
+    # Remove build dependencies
+    apt-get remove -y libffi-dev zlib1g-dev; \
     apt-get clean; \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* ; \
+    for i in $(gem env path|cut -d':' -f1- --output-delimiter=' '); do rm -vf $i/cache/*.gem ; done
 
 RUN mkdir -p /root/.ssh && ssh-keyscan github.com >> /root/.ssh/known_hosts
-
-COPY Gemfile .
-RUN gem install bundler; echo "gem: --no-ri --no-rdoc" >/etc/gemrc; \
-    bundle install --without deployment \
-                   --binstubs /usr/local/bin
 
 COPY run.sh /usr/local/bin/
 
