@@ -1,7 +1,7 @@
 class Vimb < FPM::Cookery::Recipe
   name     'vimb'
-  version  '2.12'
-  revision '4'
+  version  '3.6.0'
+  revision '1'
 
   description 'Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.'
   license     'GPL-3.0'
@@ -13,11 +13,11 @@ class Vimb < FPM::Cookery::Recipe
     :tag       => version,
     :submodule => true
 
-  build_depends 'libsoup2.4-dev', 'libwebkit-dev', 'libgtk-3-dev', 'libwebkitgtk-3.0-dev'
-  depends       'libsoup2.4-1', 'libwebkitgtk-3.0-0'
+  build_depends 'libwebkit2gtk-4.0-dev'
+  depends       'libwebkit2gtk-4.0-37'
 
   def build
-    make 'GTK=3'
+    make
   end
 
   def install
