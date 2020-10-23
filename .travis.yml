@@ -1,5 +1,5 @@
 ---
-dist: xenial
+dist: bionic
 sudo: required
 language: ruby
 rvm:
@@ -17,13 +17,7 @@ jobs:
   fast_finish: true
   include:
     - stage: cook
-      env: DISTRO=ubuntu-xenial
-      script: bundle exec rake test:cook distro=$DISTRO
-      deploy:
-        provider: script
-        script: scripts/deploy.sh
-        skip_cleanup: true
-    - env: DISTRO=ubuntu-bionic
+      env: DISTRO=ubuntu-bionic
       script: bundle exec rake test:cook distro=$DISTRO
       deploy:
         provider: script
@@ -31,9 +25,7 @@ jobs:
         skip_cleanup: true
 
     - stage: build
-      env: DISTRO=ubuntu-xenial
-      script: bundle exec rake test:build distro=$DISTRO
-    - env: DISTRO=ubuntu-bionic
+      env: DISTRO=ubuntu-bionic
       script: bundle exec rake test:build distro=$DISTRO
 env:
   global:
