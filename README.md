@@ -26,11 +26,11 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |[runc](https://github.com/opencontainers/runc)|1.0.0-rc2-1|CLI tool for spawning and running containers according to the OCI specification|
 |[smenu](https://github.com/p-gen/smenu)|0.9.14-1|Terminal utility that allows you to use words coming from the standard input to create a nice selection window just below the cursor.|
 |[swift-lang](https://swift.org)|4.2-2|Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns.|
-|[terminator](https://github.com/gnome-terminator/terminator)|2.0.1-1|multiple GNOME terminals in one window|
+|[terminator](https://github.com/gnome-terminator/terminator)|2.0.1-2|multiple GNOME terminals in one window|
 |[tflint](https://github.com/wata727/tflint)|0.7.2-1|TFLint is a Terraform linter for detecting errors that can not be detected by terraform plan|
 |[trailer-cli](https://github.com/ptsochantaris/trailer-cli)|1.0.8-3|Managing Pull Requests and Issues For GitHub & GitHub Enterprise from the command line|
 |[vimb-webkit2](https://github.com/fanglingsu/vimb)|3.2.0-1|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
-|[vimb](https://github.com/fanglingsu/vimb)|3.6.0-1|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
+|[vimb](https://github.com/fanglingsu/vimb)|3.6.0-2|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
 |[xst](https://github.com/neeasade/xst)|0.7.1-4|xst is a fork of st, which is a simple terminal implementation for X.|
 |[zeal](https://zealdocs.org)|2:0.6.1-3|Offline documentation browser inspired by Dash|
 
