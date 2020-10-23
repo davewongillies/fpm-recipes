@@ -3,7 +3,7 @@ class Terminator < FPM::Cookery::Recipe
   version    '2.0.1'
   # git_ref =  '9e05a5d'
   # revision   "1~g#{git_ref}"
-  revision   "1"
+  revision   "2"
   homepage   'https://github.com/gnome-terminator/terminator'
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
   license    'GPL-2.0'
