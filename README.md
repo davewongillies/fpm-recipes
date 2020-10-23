@@ -15,6 +15,7 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |[ctop](https://ctop.sh)|0.7.1-2|Top-like interface for container metrics|
 |[docker-compose](https://github.com/docker/compose)|1.22.0-1|Define and run multi-container applications with Docker|
 |[envchain](https://github.com/sorah/envchain)|1.0.1-4|Environment variables meet gnome-keyring|
+|[hfdisk](http://www.codesrc.com/gitweb/index.cgi?p=hfdisk.git;a=summary)|0.1-23|Port of the Apple mklinux mac-fdisk pdisk utility to x86.|
 |[lagrange](https://gmi.skyjake.fi/lagrange)|0.6.0-1|A Beautiful Gemini Client|
 |[lastpass-cli](https://github.com/lastpass/lastpass-cli)|1.3.3-3|LastPass command line interface tool|
 |[libcec-daemon](https://github.com/benklop/libcec-daemon)|0.9.5-1|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
