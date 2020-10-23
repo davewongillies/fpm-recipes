@@ -11,9 +11,11 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |----|-------|-----------|
 |[attract](http://www.attractmode.org)|2.3.0-1|A graphical front-end for command line emulators that hides the underlying operating system and is intended to be controlled with a joystick or gamepad|
 |[autorandr](https://github.com/wertarbyte/autorandr)|0.0.33-2~4f5e240|Auto-detect the connect display hardware and load the appropiate X11 setup using xrandr or disper|
+|[castor](https://git.sr.ht/~julienxx/castor)|0.8.16-1|A Browser for the small internet (Gemini, Gopher, Finger)|
 |[ctop](https://ctop.sh)|0.7.1-2|Top-like interface for container metrics|
 |[docker-compose](https://github.com/docker/compose)|1.22.0-1|Define and run multi-container applications with Docker|
 |[envchain](https://github.com/sorah/envchain)|1.0.1-3|Environment variables meet gnome-keyring|
+|[lagrange](https://gmi.skyjake.fi/lagrange)|0.5.0-1|A Beautiful Gemini Client|
 |[lastpass-cli](https://github.com/lastpass/lastpass-cli)|1.3.3-3|LastPass command line interface tool|
 |[libcec-daemon](https://github.com/benklop/libcec-daemon)|0.9.5-1|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
 |[meson](http://mesonbuild.com/)|0.50.1-2|The Meson Build System|
