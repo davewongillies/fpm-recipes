@@ -1,7 +1,7 @@
 class Lagrange < FPM::Cookery::Recipe
   name 'lagrange'
-  version '0.5.0'
-  revision '2'
+  version '0.6.0'
+  revision '1'
 
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
   license    'MIT'
