@@ -1,7 +1,7 @@
 class Vimb < FPM::Cookery::Recipe
   name     'vimb'
   version  '3.6.0'
-  revision '2'
+  revision '3'
 
   description 'Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.'
   license     'GPL-3.0'

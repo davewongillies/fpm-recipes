@@ -1,6 +1,6 @@
 class Smenu < FPM::Cookery::Recipe
   name 'smenu'
-  version '0.9.14'
+  version '0.9.16'
   revision '1'
 
   homepage "https://github.com/p-gen/#{name}"

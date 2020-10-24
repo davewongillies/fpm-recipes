@@ -4,9 +4,9 @@ class Previous < FPM::Cookery::Recipe
   maintainer  'Dave Wongillies <dave.gillies@gmail.com>'
   license     'GPL-2.0'
 
-  svn_revision = '885'
+  svn_revision = '950'
 
-  version  "2.0+svn#{svn_revision}"
+  version  "2.2+svn#{svn_revision}"
   revision '1'
 
   homepage 'http://previous.alternative-system.com/'
@@ -14,8 +14,35 @@ class Previous < FPM::Cookery::Recipe
     :with     => 'svn',
     :revision => "r#{svn_revision}"
 
-  build_depends 'g++', 'cmake', 'zlib1g-dev', 'libpng12-dev', 'libsdl2-dev', 'subversion', 'libudev-dev', 'libgl1-mesa-dev', 'libglu1-mesa-dev', 'libasound2-dev', 'libpulse-dev', 'libopenal-dev', 'libaudiofile-dev', 'libdbus-1-dev', 'libdirectfb-dev', 'libpcap-dev'
-  depends       'libsdl2-2.0-0', 'libudev1', 'libglu1-mesa', 'libasound2', 'libpulse0', 'libopenal1', 'libaudiofile1', 'libdbus-1-3', 'libdirectfb-1.2-9', 'libpcap0.8'
+  build_depends \
+    'cmake',
+    'g++',
+    'libasound2-dev',
+    'libaudiofile-dev',
+    'libdbus-1-dev',
+    'libdirectfb-dev',
+    'libgl1-mesa-dev',
+    'libglu1-mesa-dev',
+    'libopenal-dev',
+    'libpcap-dev',
+    'libpng-dev',
+    'libpulse-dev',
+    'libsdl2-dev',
+    'libudev-dev',
+    'subversion',
+    'zlib1g-dev'
+
+  depends \
+    'libasound2',
+    'libaudiofile1',
+    'libdbus-1-3',
+    'libdirectfb-1.7-7',
+    'libglu1-mesa',
+    'libopenal1',
+    'libpcap0.8',
+    'libpulse0',
+    'libsdl2-2.0-0',
+    'libudev1'
 
   def build
     configure :prefix => '/usr'

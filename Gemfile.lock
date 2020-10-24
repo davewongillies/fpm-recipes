@@ -1,30 +1,15 @@
-GIT
-  remote: https://github.com/bernd/fpm-cookery.git
-  revision: 07f06f03ee9a06c48ea0635b9fc33ffe1844d19f
-  branch: master
-  specs:
-    fpm-cookery (0.35.1)
-      addressable (~> 2.3.8)
-      facter
-      fpm (~> 1.1)
-      json (>= 1.7.7, < 2.0)
-      json_pure (>= 1.7.7, < 2.0)
-      puppet (>= 3.4, < 6.0)
-      safe_yaml (~> 1.0.4)
-      systemu
-
 GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.3.8)
     arr-pm (0.0.10)
       cabin (> 0)
-    backports (3.17.1)
+    backports (3.18.2)
     cabin (0.9.0)
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
     clamp (1.0.1)
-    dotenv (2.7.5)
+    dotenv (2.7.6)
     dpkg-deb (0.1.0)
     facter (2.5.7)
     fast_gettext (1.1.2)
@@ -40,6 +25,15 @@ GEM
       pleaserun (~> 0.0.29)
       ruby-xz (~> 0.2.3)
       stud
+    fpm-cookery (0.35.1)
+      addressable (~> 2.3.8)
+      facter
+      fpm (~> 1.1)
+      json (>= 1.7.7, < 2.0)
+      json_pure (>= 1.7.7, < 2.0)
+      puppet (>= 3.4, < 6.0)
+      safe_yaml (~> 1.0.4)
+      systemu
     hiera (3.6.0)
     httparty (0.18.0)
       mime-types (~> 3.0)
@@ -52,7 +46,7 @@ GEM
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2019.1009)
-    multi_json (1.14.1)
+    multi_json (1.15.0)
     multi_xml (0.6.0)
     mustache (0.99.8)
     pleaserun (0.0.31)
@@ -62,7 +56,7 @@ GEM
       insist
       mustache (= 0.99.8)
       stud
-    puppet (5.5.19)
+    puppet (5.5.22)
       facter (> 2.0.1, < 4)
       fast_gettext (~> 1.1.2)
       hiera (>= 3.2.1, < 4)
@@ -83,7 +77,7 @@ PLATFORMS
 DEPENDENCIES
   dpkg-deb
   ffi (= 1.9.25)
-  fpm-cookery!
+  fpm-cookery (= 0.35.1)
   httparty
   rake (>= 12.3.3)
   xmlrpc

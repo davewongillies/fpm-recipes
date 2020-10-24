@@ -1,7 +1,7 @@
 class Castor < FPM::Cookery::Recipe
   name 'castor'
   version '0.8.16'
-  revision '1'
+  revision '2'
 
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
   license    'MIT'
