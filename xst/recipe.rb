@@ -1,7 +1,7 @@
 class Xst < FPM::Cookery::Recipe
   name     'xst'
-  version  '0.7.1'
-  revision '4'
+  version  '0.8.4'
+  revision '1'
 
   description 'xst is a fork of st, which is a simple terminal implementation for X.'
   license     'MIT'
@@ -21,10 +21,10 @@ class Xst < FPM::Cookery::Recipe
   end
 
   def install
-    bin.install 'st'
-    man1.install 'doc/st.1'
-    doc(name).install ['doc/FAQ', 'doc/LEGACY', 'doc/LICENSE', 'doc/TODO.md', 'doc/Xresources']
-    share('applications').install workdir('st.desktop')
+    bin.install 'xst'
+    man1.install 'st.1', 'doc/xst.1'
+    doc(name).install ['FAQ', 'LEGACY', 'LICENSE', 'TODO', '.Xresources']
+    share('applications').install workdir('xst.desktop')
   end
 
 end

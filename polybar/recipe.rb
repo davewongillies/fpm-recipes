@@ -1,6 +1,6 @@
 class Polybar < FPM::Cookery::Recipe
   name 'polybar'
-  version '3.4.2'
+  version '3.4.3'
   revision '1'
 
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
@@ -9,9 +9,18 @@ class Polybar < FPM::Cookery::Recipe
   homepage "https://github.com/polybar/#{name}"
   source "https://github.com/polybar/#{name}.git",
     :with      => 'git',
-    :submodule => true
+    :submodule => true,
+    :tag       => version
 
   description 'A fast and easy-to-use status bar'
+
+  case FPM::Cookery::Facts.lsbcodename
+    when :focal
+      build_deps = ['python3-xcbgen']
+    else
+      build_deps = ['python-xcbgen']
+  end
+
   build_depends 'cmake',
     'cmake-data',
     'i3-wm',
@@ -38,8 +47,9 @@ class Polybar < FPM::Cookery::Recipe
     'libxcb-xkb-dev',
     'libxcb1-dev',
     'pkg-config',
-    'python-xcbgen',
-    'xcb-proto'
+    'xcb-proto',
+    build_deps
+
   depends 'libmpdclient2', 'libxcb-ewmh2'
 
   def build

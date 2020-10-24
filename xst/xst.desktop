@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=st
+Name=xst
 Comment=xst is a fork of st, which is a simple terminal implementation for X.
-TryExec=st
-Exec=st
+TryExec=xst
+Exec=xst
 Icon=utilities-terminal
 Type=Application
 Categories=Utility;TerminalEmulator;System;

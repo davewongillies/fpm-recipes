@@ -11,27 +11,26 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |----|-------|-----------|
 |[attract](http://www.attractmode.org)|2.3.0-1|A graphical front-end for command line emulators that hides the underlying operating system and is intended to be controlled with a joystick or gamepad|
 |[autorandr](https://github.com/wertarbyte/autorandr)|0.0.33-2~4f5e240|Auto-detect the connect display hardware and load the appropiate X11 setup using xrandr or disper|
-|[castor](https://git.sr.ht/~julienxx/castor)|0.8.16-1|A Browser for the small internet (Gemini, Gopher, Finger)|
+|[castor](https://git.sr.ht/~julienxx/castor)|0.8.16-2|A Browser for the small internet (Gemini, Gopher, Finger)|
 |[ctop](https://ctop.sh)|0.7.1-2|Top-like interface for container metrics|
 |[docker-compose](https://github.com/docker/compose)|1.22.0-1|Define and run multi-container applications with Docker|
-|[envchain](https://github.com/sorah/envchain)|1.0.1-3|Environment variables meet gnome-keyring|
-|[lagrange](https://gmi.skyjake.fi/lagrange)|0.5.0-1|A Beautiful Gemini Client|
+|[envchain](https://github.com/sorah/envchain)|1.0.1-4|Environment variables meet gnome-keyring|
+|[lagrange](https://gmi.skyjake.fi/lagrange)|0.5.0-2|A Beautiful Gemini Client|
 |[lastpass-cli](https://github.com/lastpass/lastpass-cli)|1.3.3-3|LastPass command line interface tool|
 |[libcec-daemon](https://github.com/benklop/libcec-daemon)|0.9.5-1|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
 |[meson](http://mesonbuild.com/)|0.50.1-2|The Meson Build System|
 |[neovim](https://github.com/neovim/python-client)|0.2.4-2|Python client to neovim|
-|[polybar](https://github.com/polybar/polybar)|3.4.2-1|A fast and easy-to-use status bar|
-|[previous](http://previous.alternative-system.com/)|2.0+svn885-1|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
-|[ranger](https://github.com/ranger/ranger)|1.8.1-1|A VIM-inspired filemanager for the console|
+|[polybar](https://github.com/polybar/polybar)|3.4.3-1|A fast and easy-to-use status bar|
+|[previous](http://previous.alternative-system.com/)|2.2+svn950-1|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
+|[ranger](https://github.com/ranger/ranger)|1.9.3-1|A VIM-inspired filemanager for the console|
 |[runc](https://github.com/opencontainers/runc)|1.0.0-rc2-1|CLI tool for spawning and running containers according to the OCI specification|
-|[smenu](https://github.com/p-gen/smenu)|0.9.14-1|Terminal utility that allows you to use words coming from the standard input to create a nice selection window just below the cursor.|
+|[smenu](https://github.com/p-gen/smenu)|0.9.16-1|Terminal utility that allows you to use words coming from the standard input to create a nice selection window just below the cursor.|
 |[swift-lang](https://swift.org)|4.2-2|Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns.|
 |[terminator](https://github.com/gnome-terminator/terminator)|2.0.1-2|multiple GNOME terminals in one window|
 |[tflint](https://github.com/wata727/tflint)|0.7.2-1|TFLint is a Terraform linter for detecting errors that can not be detected by terraform plan|
 |[trailer-cli](https://github.com/ptsochantaris/trailer-cli)|1.0.8-3|Managing Pull Requests and Issues For GitHub & GitHub Enterprise from the command line|
-|[vimb-webkit2](https://github.com/fanglingsu/vimb)|3.2.0-1|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
-|[vimb](https://github.com/fanglingsu/vimb)|3.6.0-2|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
-|[xst](https://github.com/neeasade/xst)|0.7.1-4|xst is a fork of st, which is a simple terminal implementation for X.|
+|[vimb](https://github.com/fanglingsu/vimb)|3.6.0-3|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
+|[xst](https://github.com/neeasade/xst)|0.8.4-1|xst is a fork of st, which is a simple terminal implementation for X.|
 |[zeal](https://zealdocs.org)|2:0.6.1-3|Offline documentation browser inspired by Dash|
 
 ## Usage
