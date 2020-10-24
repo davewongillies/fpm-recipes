@@ -3,3 +3,6 @@ readme: setup
 
 setup:
 	@bundle install
+
+clean:
+	@git clean -ffdx
