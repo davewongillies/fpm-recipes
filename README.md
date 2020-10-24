@@ -25,6 +25,8 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |[previous](http://previous.alternative-system.com/)|2.2+svn950-1|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
 |[ranger](https://github.com/ranger/ranger)|1.9.3-1|A VIM-inspired filemanager for the console|
 |[runc](https://github.com/opencontainers/runc)|1.0.0-rc2-1|CLI tool for spawning and running containers according to the OCI specification|
+|[scsi2sd-util](https://www.codesrc.com/mediawiki/index.php?title=SCSI2SD)|4.8.4|Firmware update utility and configuration tool for SCSI2SD SCSI Hard Drive Emulators|
+|[scsi2sd-util6](https://www.codesrc.com/mediawiki/index.php?title=SCSI2SD)|6.3.1|Firmware update utility and configuration tool for SCSI2SD SCSI Hard Drive Emulators|
 |[smenu](https://github.com/p-gen/smenu)|0.9.16-1|Terminal utility that allows you to use words coming from the standard input to create a nice selection window just below the cursor.|
 |[swift-lang](https://swift.org)|4.2-2|Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns.|
 |[terminator](https://github.com/gnome-terminator/terminator)|2.0.1-2|multiple GNOME terminals in one window|

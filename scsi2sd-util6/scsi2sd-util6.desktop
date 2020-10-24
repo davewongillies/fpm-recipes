@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=SCSI2SD V6 Utility
+Comment=Firmware update utility and configuration tool for SCSI2SD v6
+TryExec=scsi2sd-util6
+Exec=scsi2sd-util6
+Icon=utilities
+Type=Application
+Categories=Utility;System;
+StartupNotify=true
