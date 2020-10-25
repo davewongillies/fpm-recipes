@@ -21,18 +21,17 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |[libcec-daemon](https://github.com/benklop/libcec-daemon)|0.9.5-1|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
 |[meson](http://mesonbuild.com/)|0.50.1-2|The Meson Build System|
 |[neovim](https://github.com/neovim/python-client)|0.2.4-2|Python client to neovim|
-|[polybar](https://github.com/polybar/polybar)|3.4.3-1|A fast and easy-to-use status bar|
-|[previous](http://previous.alternative-system.com/)|2.2+svn950-1|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
+|[polybar](https://github.com/polybar/polybar)|3.4.3-2|A fast and easy-to-use status bar|
+|[previous](http://previous.alternative-system.com/)|2.2+svn950-2|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
 |[ranger](https://github.com/ranger/ranger)|1.9.3-1|A VIM-inspired filemanager for the console|
 |[runc](https://github.com/opencontainers/runc)|1.0.0-rc2-1|CLI tool for spawning and running containers according to the OCI specification|
-|[scsi2sd-util](https://www.codesrc.com/mediawiki/index.php?title=SCSI2SD)|4.8.4|Firmware update utility and configuration tool for SCSI2SD SCSI Hard Drive Emulators|
-|[scsi2sd-util6](https://www.codesrc.com/mediawiki/index.php?title=SCSI2SD)|6.3.1|Firmware update utility and configuration tool for SCSI2SD SCSI Hard Drive Emulators|
+|[scsi2sd-util6](https://www.codesrc.com/mediawiki/index.php?title=SCSI2SD)|6.3.1-1|Firmware update utility and configuration tool for SCSI2SD SCSI Hard Drive Emulators|
+|[scsi2sd-util](https://www.codesrc.com/mediawiki/index.php?title=SCSI2SD)|4.8.4-1|Firmware update utility and configuration tool for SCSI2SD SCSI Hard Drive Emulators|
 |[smenu](https://github.com/p-gen/smenu)|0.9.16-1|Terminal utility that allows you to use words coming from the standard input to create a nice selection window just below the cursor.|
-|[swift-lang](https://swift.org)|4.2-2|Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns.|
 |[terminator](https://github.com/gnome-terminator/terminator)|2.0.1-2|multiple GNOME terminals in one window|
 |[tflint](https://github.com/wata727/tflint)|0.7.2-1|TFLint is a Terraform linter for detecting errors that can not be detected by terraform plan|
 |[trailer-cli](https://github.com/ptsochantaris/trailer-cli)|1.0.8-3|Managing Pull Requests and Issues For GitHub & GitHub Enterprise from the command line|
-|[vimb](https://github.com/fanglingsu/vimb)|3.6.0-3|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
+|[vimb](https://github.com/fanglingsu/vimb)|3.6.0-4|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
 |[xst](https://github.com/neeasade/xst)|0.8.4-1|xst is a fork of st, which is a simple terminal implementation for X.|
 |[zeal](https://zealdocs.org)|2:0.6.1-3|Offline documentation browser inspired by Dash|
 

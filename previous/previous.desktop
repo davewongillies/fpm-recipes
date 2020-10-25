@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Previous
+Comment=A Next Cube or Next Station computer hardware emulator
+TryExec=Previous
+Exec=Previous
+Icon=utilities-terminal
+Type=Application
+Categories=Utility;Emulator;System;
+StartupNotify=true
