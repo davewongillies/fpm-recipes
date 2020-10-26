@@ -1,7 +1,7 @@
 class Polybar < FPM::Cookery::Recipe
   name 'polybar'
   version '3.4.3'
-  revision '1'
+  revision '2'
 
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
   license    'MIT'
@@ -14,10 +14,10 @@ class Polybar < FPM::Cookery::Recipe
 
   description 'A fast and easy-to-use status bar'
 
-  case FPM::Cookery::Facts.lsbcodename
-    when :focal
+  case FPM::Cookery::Facts.osrelease
+  when '20.04'
       build_deps = ['python3-xcbgen']
-    else
+  else
       build_deps = ['python-xcbgen']
   end
 

@@ -7,7 +7,7 @@ class Previous < FPM::Cookery::Recipe
   svn_revision = '950'
 
   version  "2.2+svn#{svn_revision}"
-  revision '1'
+  revision '2'
 
   homepage 'http://previous.alternative-system.com/'
   source   'https://svn.code.sf.net/p/previous/code/trunk',
@@ -51,5 +51,6 @@ class Previous < FPM::Cookery::Recipe
 
   def install
     make :install, 'DESTDIR' => destdir
+    share('applications').install workdir("#{name}.desktop")
   end
 end
