@@ -16,11 +16,12 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |[docker-compose](https://github.com/docker/compose)|1.22.0-1|Define and run multi-container applications with Docker|
 |[envchain](https://github.com/sorah/envchain)|1.0.1-4|Environment variables meet gnome-keyring|
 |[hfdisk](http://www.codesrc.com/gitweb/index.cgi?p=hfdisk.git;a=summary)|0.1-23|Port of the Apple mklinux mac-fdisk pdisk utility to x86.|
-|[lagrange](https://gmi.skyjake.fi/lagrange)|0.6.0-1|A Beautiful Gemini Client|
+|[lagrange](https://gmi.skyjake.fi/lagrange)|0.7.2-1|A Beautiful Gemini Client|
 |[lastpass-cli](https://github.com/lastpass/lastpass-cli)|1.3.3-3|LastPass command line interface tool|
 |[libcec-daemon](https://github.com/benklop/libcec-daemon)|0.9.5-1|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
 |[meson](http://mesonbuild.com/)|0.50.1-2|The Meson Build System|
 |[neovim](https://github.com/neovim/python-client)|0.2.4-2|Python client to neovim|
+|[newkind](https://github.com/fesh0r/newkind)|1.0.1-3|Elite: The New Kind|
 |[polybar](https://github.com/polybar/polybar)|3.4.3-2|A fast and easy-to-use status bar|
 |[previous](http://previous.alternative-system.com/)|2.2+svn950-2|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
 |[ranger](https://github.com/ranger/ranger)|1.9.3-1|A VIM-inspired filemanager for the console|
