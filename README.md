@@ -4,11 +4,9 @@
 
 ## Overview
 
-My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) recipes.
-Mostly tested against Ubuntu Focal 20.04 & Bionic 18.04.
+My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) recipes. Mostly tested against Ubuntu Xenial 16.04, some recipes might also work against Debian Jessie and Wheezy if you're/I'm lucky
 
 ## Recipes
-
 |Name|Version|Description|
 |----|-------|-----------|
 |[attract](http://www.attractmode.org)|2.3.0-1|A graphical front-end for command line emulators that hides the underlying operating system and is intended to be controlled with a joystick or gamepad|
@@ -18,11 +16,12 @@ Mostly tested against Ubuntu Focal 20.04 & Bionic 18.04.
 |[docker-compose](https://github.com/docker/compose)|1.22.0-1|Define and run multi-container applications with Docker|
 |[envchain](https://github.com/sorah/envchain)|1.0.1-4|Environment variables meet gnome-keyring|
 |[hfdisk](http://www.codesrc.com/gitweb/index.cgi?p=hfdisk.git;a=summary)|0.1-23|Port of the Apple mklinux mac-fdisk pdisk utility to x86.|
-|[lagrange](https://gmi.skyjake.fi/lagrange)|0.6.0-1|A Beautiful Gemini Client|
+|[lagrange](https://gmi.skyjake.fi/lagrange)|0.7.2-1|A Beautiful Gemini Client|
 |[lastpass-cli](https://github.com/lastpass/lastpass-cli)|1.3.3-3|LastPass command line interface tool|
 |[libcec-daemon](https://github.com/benklop/libcec-daemon)|0.9.5-1|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
 |[meson](http://mesonbuild.com/)|0.50.1-2|The Meson Build System|
 |[neovim](https://github.com/neovim/python-client)|0.2.4-2|Python client to neovim|
+|[newkind](https://github.com/fesh0r/newkind)|1.0.1-3|Elite: The New Kind|
 |[polybar](https://github.com/polybar/polybar)|3.4.3-2|A fast and easy-to-use status bar|
 |[previous](http://previous.alternative-system.com/)|2.2+svn950-2|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
 |[ranger](https://github.com/ranger/ranger)|1.9.3-1|A VIM-inspired filemanager for the console|
@@ -45,15 +44,12 @@ $ ./fpm-cook.sh <recipe_dir_name> (optional <distro-code-name>)
 
 Options for distro:
 
-* ubuntu-focal
-* ubuntu-bionic
-* ubuntu-xenial
+  * ubuntu-focal
+  * ubuntu-bionic
+  * ubuntu-xenial
 
 ## apt repo setup
 
-The packages from this repo also get published to [bintray](https://bintray.com/davewongillies/fpm-recipes).
-Currently they are only built for Ubuntu 18.04 (bionic) and 20.04 (focal). To add
-this repo to your system:
-
-1. `sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv D401AB61`
-1. `echo "deb https://dl.bintray.com/davewongillies/fpm-recipes focal main" | sudo tee -a /etc/apt/sources.list.d/davewongillies-fpm-recipes.list`
+The packages from this repo also get published to [bintray](https://bintray.com/davewongillies/fpm-recipes). Currently they are only built for Ubuntu 16.04 and 18.04. To add this repo to your system:
+1. `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv D401AB61`
+1. `echo "deb https://dl.bintray.com/davewongillies/fpm-recipes xenial main" | sudo tee -a /etc/apt/sources.list.d/davewongillies-fpm-recipes.list`
