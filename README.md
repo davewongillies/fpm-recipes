@@ -4,9 +4,11 @@
 
 ## Overview
 
-My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) recipes. Mostly tested against Ubuntu Xenial 16.04, some recipes might also work against Debian Jessie and Wheezy if you're/I'm lucky
+My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) recipes.
+Mostly tested against Ubuntu Focal 20.04 & Bionic 18.04.
 
 ## Recipes
+
 |Name|Version|Description|
 |----|-------|-----------|
 |[attract](http://www.attractmode.org)|2.3.0-1|A graphical front-end for command line emulators that hides the underlying operating system and is intended to be controlled with a joystick or gamepad|
@@ -43,12 +45,15 @@ $ ./fpm-cook.sh <recipe_dir_name> (optional <distro-code-name>)
 
 Options for distro:
 
-  * ubuntu-focal
-  * ubuntu-bionic
-  * ubuntu-xenial
+* ubuntu-focal
+* ubuntu-bionic
+* ubuntu-xenial
 
 ## apt repo setup
 
-The packages from this repo also get published to [bintray](https://bintray.com/davewongillies/fpm-recipes). Currently they are only built for Ubuntu 16.04 and 18.04. To add this repo to your system:
-1. `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv D401AB61`
-1. `echo "deb https://dl.bintray.com/davewongillies/fpm-recipes xenial main" | sudo tee -a /etc/apt/sources.list.d/davewongillies-fpm-recipes.list`
+The packages from this repo also get published to [bintray](https://bintray.com/davewongillies/fpm-recipes).
+Currently they are only built for Ubuntu 18.04 (bionic) and 20.04 (focal). To add
+this repo to your system:
+
+1. `sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv D401AB61`
+1. `echo "deb https://dl.bintray.com/davewongillies/fpm-recipes focal main" | sudo tee -a /etc/apt/sources.list.d/davewongillies-fpm-recipes.list`
