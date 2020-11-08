@@ -1,7 +1,7 @@
 class Vimb < FPM::Cookery::Recipe
   name     'vimb'
   version  '3.6.0'
-  revision '4'
+  revision '5'
 
   description 'Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.'
   license     'GPL-3.0'
@@ -17,11 +17,13 @@ class Vimb < FPM::Cookery::Recipe
   depends       'libwebkit2gtk-4.0-37'
 
   def build
-    make 'prefix' => '/usr'
+    make 'PREFIX' => '/usr'
   end
 
   def install
-   make :install, 'PREFIX' => '/usr', 'DESTDIR' => destdir
+   make :install,
+     'PREFIX' => '/usr',
+     'DESTDIR' => destdir
   end
 
 end

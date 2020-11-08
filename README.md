@@ -4,7 +4,8 @@
 
 ## Overview
 
-My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) recipes. Mostly tested against Ubuntu Xenial 16.04, some recipes might also work against Debian Jessie and Wheezy if you're/I'm lucky
+My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery)
+recipes. Mostly tested against Ubuntu Focal 20.04.
 
 ## Recipes
 |Name|Version|Description|
@@ -21,7 +22,6 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |[libcec-daemon](https://github.com/benklop/libcec-daemon)|0.9.5-1|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
 |[meson](http://mesonbuild.com/)|0.50.1-2|The Meson Build System|
 |[neovim](https://github.com/neovim/python-client)|0.2.4-2|Python client to neovim|
-|[newkind](https://github.com/fesh0r/newkind)|1.0.1-3|Elite: The New Kind|
 |[polybar](https://github.com/polybar/polybar)|3.4.3-2|A fast and easy-to-use status bar|
 |[previous](http://previous.alternative-system.com/)|2.2+svn950-2|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
 |[ranger](https://github.com/ranger/ranger)|1.9.3-1|A VIM-inspired filemanager for the console|
@@ -32,7 +32,7 @@ My collection of personal [fpm-cookery](https://github.com/bernd/fpm-cookery) re
 |[terminator](https://github.com/gnome-terminator/terminator)|2.0.1-2|multiple GNOME terminals in one window|
 |[tflint](https://github.com/wata727/tflint)|0.7.2-1|TFLint is a Terraform linter for detecting errors that can not be detected by terraform plan|
 |[trailer-cli](https://github.com/ptsochantaris/trailer-cli)|1.0.8-3|Managing Pull Requests and Issues For GitHub & GitHub Enterprise from the command line|
-|[vimb](https://github.com/fanglingsu/vimb)|3.6.0-4|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
+|[vimb](https://github.com/fanglingsu/vimb)|3.6.0-5|Vimb is a Vim-like web browser that is inspired by Pentadactyl and Vimprobable.|
 |[xst](https://github.com/neeasade/xst)|0.8.4-1|xst is a fork of st, which is a simple terminal implementation for X.|
 |[zeal](https://zealdocs.org)|2:0.6.1-3|Offline documentation browser inspired by Dash|
 
@@ -44,12 +44,14 @@ $ ./fpm-cook.sh <recipe_dir_name> (optional <distro-code-name>)
 
 Options for distro:
 
-  * ubuntu-focal
-  * ubuntu-bionic
-  * ubuntu-xenial
+* ubuntu-focal
+* ubuntu-bionic
 
 ## apt repo setup
 
-The packages from this repo also get published to [bintray](https://bintray.com/davewongillies/fpm-recipes). Currently they are only built for Ubuntu 16.04 and 18.04. To add this repo to your system:
-1. `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv D401AB61`
-1. `echo "deb https://dl.bintray.com/davewongillies/fpm-recipes xenial main" | sudo tee -a /etc/apt/sources.list.d/davewongillies-fpm-recipes.list`
+The packages from this repo also get published to [bintray](https://bintray.com/davewongillies/fpm-recipes).
+Currently they are only built for Ubuntu 20.04 and 18.04. To add this repo to
+your system:
+
+1. `sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv D401AB61`
+1. `echo "deb https://dl.bintray.com/davewongillies/fpm-recipes focal main" | sudo tee -a /etc/apt/sources.list.d/davewongillies-fpm-recipes.list`
