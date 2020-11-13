@@ -14,12 +14,14 @@ recipes. Mostly tested against Ubuntu Focal 20.04.
 |[autorandr](https://github.com/wertarbyte/autorandr)|0.0.33-2~4f5e240|Auto-detect the connect display hardware and load the appropiate X11 setup using xrandr or disper|
 |[castor](https://git.sr.ht/~julienxx/castor)|0.8.16-2|A Browser for the small internet (Gemini, Gopher, Finger)|
 |[ctop](https://ctop.sh)|0.7.1-2|Top-like interface for container metrics|
+|[dbus-action](https://github.com/bulletmark/dbus-action)|1.3-1|Watch D-Bus to action configured commands on specific events|
 |[docker-compose](https://github.com/docker/compose)|1.22.0-1|Define and run multi-container applications with Docker|
 |[envchain](https://github.com/sorah/envchain)|1.0.1-4|Environment variables meet gnome-keyring|
 |[hfdisk](http://www.codesrc.com/gitweb/index.cgi?p=hfdisk.git;a=summary)|0.1-23|Port of the Apple mklinux mac-fdisk pdisk utility to x86.|
 |[lagrange](https://gmi.skyjake.fi/lagrange)|0.7.2-1|A Beautiful Gemini Client|
 |[lastpass-cli](https://github.com/lastpass/lastpass-cli)|1.3.3-3|LastPass command line interface tool|
 |[libcec-daemon](https://github.com/benklop/libcec-daemon)|0.9.5-1|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
+|[libinput-gestures](https://github.com/bulletmark/libinput-gestures)|2.52-1|Actions gestures on your touchpad using libinput|
 |[meson](http://mesonbuild.com/)|0.50.1-2|The Meson Build System|
 |[neovim](https://github.com/neovim/python-client)|0.2.4-2|Python client to neovim|
 |[polybar](https://github.com/polybar/polybar)|3.4.3-2|A fast and easy-to-use status bar|
