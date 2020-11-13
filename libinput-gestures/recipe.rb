@@ -1,7 +1,7 @@
 class LibinputGestures < FPM::Cookery::Recipe
   name 'libinput-gestures'
   version '2.52'
-  revision '1'
+  revision '2'
 
   homepage "https://github.com/bulletmark/#{name}"
   source "https://github.com/bulletmark/#{name}.git",
@@ -14,6 +14,7 @@ class LibinputGestures < FPM::Cookery::Recipe
   license 'MIT'
 
   depends \
+    'dbus-action',
     'libinput-tools',
     'python3',
     'wmctrl',

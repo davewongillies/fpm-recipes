@@ -1,7 +1,7 @@
 class Gestures < FPM::Cookery::Recipe
   name 'gestures'
   version '0.2.3'
-  revision '1'
+  revision '2'
 
   homepage "https://gitlab.com/cunidev/#{name}"
   source "https://gitlab.com/cunidev/#{name}.git",
@@ -16,7 +16,7 @@ class Gestures < FPM::Cookery::Recipe
   build_depends 'python3-setuptools'
   depends \
     'libinput-tools',
-    # 'libinput-gestures',
+    'libinput-gestures',
     'python3',
     'python3-gi',
     'python3-setuptools',
