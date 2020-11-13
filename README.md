@@ -17,6 +17,7 @@ recipes. Mostly tested against Ubuntu Focal 20.04.
 |[dbus-action](https://github.com/bulletmark/dbus-action)|1.3-1|Watch D-Bus to action configured commands on specific events|
 |[docker-compose](https://github.com/docker/compose)|1.22.0-1|Define and run multi-container applications with Docker|
 |[envchain](https://github.com/sorah/envchain)|1.0.1-4|Environment variables meet gnome-keyring|
+|[gestures](https://gitlab.com/cunidev/gestures)|0.2.3-1|Modern, minimal GUI app for libinput-gestures|
 |[hfdisk](http://www.codesrc.com/gitweb/index.cgi?p=hfdisk.git;a=summary)|0.1-23|Port of the Apple mklinux mac-fdisk pdisk utility to x86.|
 |[lagrange](https://gmi.skyjake.fi/lagrange)|0.7.2-1|A Beautiful Gemini Client|
 |[lastpass-cli](https://github.com/lastpass/lastpass-cli)|1.3.3-3|LastPass command line interface tool|
