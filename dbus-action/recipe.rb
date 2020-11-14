@@ -1,7 +1,7 @@
 class DbusAction < FPM::Cookery::Recipe
   name 'dbus-action'
   version '1.3'
-  revision '1'
+  revision '2'
 
   homepage "https://github.com/bulletmark/#{name}"
   source "https://github.com/bulletmark/#{name}.git",
@@ -26,7 +26,7 @@ class DbusAction < FPM::Cookery::Recipe
     bin.install name
     etc.install "#{name}.conf"
     doc(name).install 'README.md'
-    share('application').install "#{name}.desktop"
+    share('applications').install "#{name}.desktop"
     share('icons/hicolor/128x128/apps').install "#{name}.svg"
   end
 
