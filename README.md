@@ -19,7 +19,7 @@ recipes. Mostly tested against Ubuntu Focal 20.04.
 |[envchain](https://github.com/sorah/envchain)|1.0.1-4|Environment variables meet gnome-keyring|
 |[gestures](https://gitlab.com/cunidev/gestures)|0.2.3-2|Modern, minimal GUI app for libinput-gestures|
 |[hfdisk](http://www.codesrc.com/gitweb/index.cgi?p=hfdisk.git;a=summary)|0.1-23|Port of the Apple mklinux mac-fdisk pdisk utility to x86.|
-|[lagrange](https://gmi.skyjake.fi/lagrange)|0.9.0-1|A Beautiful Gemini Client|
+|[lagrange](https://gmi.skyjake.fi/lagrange)|0.10.0-1|A Beautiful Gemini Client|
 |[lastpass-cli](https://github.com/lastpass/lastpass-cli)|1.3.3-3|LastPass command line interface tool|
 |[libcec-daemon](https://github.com/benklop/libcec-daemon)|0.9.5-1|A Linux daemon for connecting libcec to uinput. That is, using your TV to control your PC!|
 |[libinput-gestures](https://github.com/bulletmark/libinput-gestures)|2.52-3|Actions gestures on your touchpad using libinput|
