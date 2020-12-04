@@ -25,7 +25,7 @@ recipes. Mostly tested against Ubuntu Focal 20.04.
 |[libinput-gestures](https://github.com/bulletmark/libinput-gestures)|2.52-3|Actions gestures on your touchpad using libinput|
 |[meson](http://mesonbuild.com/)|0.50.1-2|The Meson Build System|
 |[neovim](https://github.com/neovim/python-client)|0.2.4-2|Python client to neovim|
-|[polybar](https://github.com/polybar/polybar)|3.4.3-2|A fast and easy-to-use status bar|
+|[polybar](https://github.com/polybar/polybar)|3.5.0-1|A fast and easy-to-use status bar|
 |[previous](http://previous.alternative-system.com/)|2.2+svn950-2|Previous is a Next computer hardware emulator. It aims to emulate a Next Cube or a Next Station with all its peripheral.|
 |[ranger](https://github.com/ranger/ranger)|1.9.3-1|A VIM-inspired filemanager for the console|
 |[runc](https://github.com/opencontainers/runc)|1.0.0-rc2-1|CLI tool for spawning and running containers according to the OCI specification|

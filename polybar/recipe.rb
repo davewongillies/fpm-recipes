@@ -1,7 +1,7 @@
 class Polybar < FPM::Cookery::Recipe
   name 'polybar'
-  version '3.4.3'
-  revision '2'
+  version '3.5.0'
+  revision '1'
 
   maintainer 'Dave Wongillies <dave.gillies@gmail.com>'
   license    'MIT'
